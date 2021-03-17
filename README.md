@@ -1,10 +1,10 @@
-# [Título del trabajo]
+HAZTE CON TODOS
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+Realizaremos una hemeroteca sobre los Pokemos clasificandolos por tipo, region en la que se encuentrar, indicando sus evoluciones y alguna informacion adiciconal sobre cada uno. Tambien se aportara informacion sobre los gimnasios pokemon y ligas.
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+Constantino Janeiro Catena 
 
 ## Objetivos del trabajo
 
