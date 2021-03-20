@@ -4,7 +4,9 @@ Realizaremos una hemeroteca sobre los Pokemos clasificandolos por tipo, region e
 
 ## Integrantes del equipo
 
-Constantino Janeiro Catena 
+Constantino Janeiro Catena @Constan-14
+Adrian Langarica Esteban @adrianlan79
+Ruben Ernesto Godoy Salcedo @ruben1000iq
 
 ## Objetivos del trabajo
 
