@@ -1,4 +1,4 @@
-HAZTE CON TODOS
+## HAZTE CON TODOS
 
 Realizaremos una hemeroteca sobre los Pokemos clasificandolos por tipo, region en la que se encuentrar, indicando sus evoluciones y alguna informacion adiciconal sobre cada uno. Tambien se aportara informacion sobre los gimnasios pokemon y ligas.
 
