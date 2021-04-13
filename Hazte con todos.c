@@ -11,7 +11,6 @@ int main (){
 	printf("-------------------------------------\n");
 	
   do{
-		
 		printf("\tPulse 1 para entrar al menu de la Pokedex\n");
 		printf("\tSi quiere salir pulse 2\n");
 		printf("\tSi desea saber mas hacerca de nosotras pulse 3\n");
@@ -39,7 +38,7 @@ int main (){
 				printf("\tLos creadores de este proyecto somos:\n");
 				printf("\tConstantino Janeiro Catena\n");
 				printf("\tAdrian Langarica Esteban\n");
-				printf("\tRuben Ernesto Godoy Salcedo\n");
+				printf("\tRuben Ernesto Godoy Salcedo\n");                                                            
 				printf("\tPulse 1 si desea volver a la pantalla de inicio o 2 si quiere salir\n");
 				scanf("%d", &seleccion);
 				
@@ -56,6 +55,6 @@ int main (){
 		}
 	}
 	while(volver==1);
-
+    
 return 0;
 }
