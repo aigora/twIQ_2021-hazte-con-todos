@@ -13,7 +13,7 @@ int main (){
   do{
 		printf("\tPulse 1 para entrar al menu de la Pokedex\n");
 		printf("\tSi quiere salir pulse 2\n");
-		printf("\tSi desea saber mas hacerca de nosotras pulse 3\n");
+		printf("\tSi desea saber mas acerca de nosotras pulse 3\n");
 		printf("-------------------------------------\n");
 		scanf("%d", &seleccion);
 		
