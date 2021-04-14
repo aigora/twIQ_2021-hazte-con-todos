@@ -1,7 +1,14 @@
 #include <stdio.h>
 #define N 100
 
+struct equipo {
+	char pokemon1[N];
+	char pokemon2[N];
+	char pokemon3[N];
+	int nPotis;
+};	
 int main (){
+  struct equipo pokemon[N]
   int numero_pokedex;
   int seleccion,volver,i;
   char entrenador[N];
@@ -11,11 +18,12 @@ int main (){
 	printf("-------------------------------------\n");
 	
   do{
-		printf("\tPulse 1 para entrar al menu de la Pokedex\n");
-		printf("\tSi quiere salir pulse 2\n");
-		printf("\tSi desea saber mas acerca de nosotras pulse 3\n");
-		printf("-------------------------------------\n");
-		scanf("%d", &seleccion);
+	printf("\t Pulse 1 para entrar al menu de la Pokedex\n");
+  	printf("\t Pulse 2 para entrar al creador de equipos\n");
+	printf("\t Si quiere salir pulse 3\n");
+	printf("\t Y si desea saber mas acerca de nosotras pulse 4\n");
+	printf("-------------------------------------\n");
+	scanf("%d", &seleccion);
 		
 		switch(seleccion){
 			case 1:
@@ -29,10 +37,14 @@ int main (){
 			break;
 			
 			case 2:
+				volver=0;
+				
+			
+			case 3:
 				printf("\t!!!Hasta la proxima!!!\n");	
 			return 0;
 			
-			case 3:
+			case 4:
 				volver=0;
 				
 				printf("\tLos creadores de este proyecto somos:\n");
