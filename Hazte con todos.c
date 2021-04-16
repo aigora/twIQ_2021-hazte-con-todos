@@ -8,8 +8,8 @@ struct equipo {
 	int nPotis;
 };	
 int main (){
-  struct equipo pokemon[N]
-  int numero_pokedex;
+  struct equipo pokemons[N];
+  int npokedex;
   int seleccion,volver,i;
   char entrenador[N];
 
@@ -33,12 +33,20 @@ int main (){
 				scanf("%s", entrenador);
 				printf("\tBienvenido al menu %s, aqui podra seleccionar el pokemon del que deseas saber acerca\n",entrenador);
 				printf("\tAhora introduzca el numero del pokemon que quieres ver\n"); //De aqui mandara al numero d las pokedex a la que corresponde el pokemon, en el cual se mostrara toda la informacion
-				scanf("%d", &numero_pokedex);
+				scanf("%d", &npokedex);
 			break;
 			
 			case 2:
 				volver=0;
-				
+				printf("\t %s has entrado en el creador de equipos, aqui podras seleccionar los pokemons que habra en tu equipo asi como los objetos que usaras en tus peleas\n", entrenador);
+				printf("\tAhora indica el nombre de tu primer pokemon\n");
+				scanf("%s",&pokemons[i].pokemon1);
+				printf("\tAhora indica el nombre de tu segundo pokemon\n");
+				scanf("%s",&pokemons[i].pokemon2);
+				printf("\tAhora indica el nombre de tu tercer pokemon\n");
+				scanf("%s",&pokemons[i].pokemon3);
+				printf("Por ultimo indica el numero de pociones de curacion que quieres emplear\n");
+				scanf("%d", &pokemons[i].nPotis);
 			
 			case 3:
 				printf("\t!!!Hasta la proxima!!!\n");	
