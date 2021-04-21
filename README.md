@@ -10,5 +10,4 @@ Ruben Ernesto Godoy Salcedo @ruben1000iq
 
 ## Objetivos del trabajo
 - Poder crear tu propio equipo
-- La aparicion de un gran listado de pokemons
-- 
+- La aparicion de un gran listado de pokemons, mediante un buscador
