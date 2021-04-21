@@ -14,7 +14,7 @@ int main (){
   char entrenador[N];
 
 	printf("-------------------------------------\n");
-	printf("|\t*Bienvenido a tu Hemeroteca de pokemons, 'HAZTE CON TODOS'*\n|");
+	printf("|\t*Bienvenido a tu Hemeroteca de , 'HAZTE CON TODOS'*\n|");
 	printf("-------------------------------------\n");
 	
   do{
