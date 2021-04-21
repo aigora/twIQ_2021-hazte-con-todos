@@ -14,14 +14,14 @@ int main (){
   char entrenador[N];
 
 	printf("-------------------------------------\n");
-	printf("\t*Bienvenido a tu Hemeroteca de pokemons, 'HAZTE CON TODOS'*\n");
+	printf("|\t*Bienvenido a tu Hemeroteca de pokemons, 'HAZTE CON TODOS'*\n|");
 	printf("-------------------------------------\n");
 	
   do{
 	printf("\t Pulse 1 para entrar al menu de la Pokedex\n");
   	printf("\t Pulse 2 para entrar al creador de equipos\n");
 	printf("\t Si quiere salir pulse 3\n");
-	printf("\t Y si desea saber mas acerca de nosotras pulse 4\n");
+	printf("\t Y si desea saber mas acerca de nosotros pulse 4\n");
 	printf("-------------------------------------\n");
 	scanf("%d", &seleccion);
 		
