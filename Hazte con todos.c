@@ -79,3 +79,52 @@ int main (){
     
 return 0;
 }
+    printf("\t-----------\n");
+	printf("\t|Bulbasaur|\n");
+	printf("\t-----------\n");
+    printf("\tGeneracion: 1\n");
+	printf("\tTipo: Planta y Veneno \n");
+	printf("\tDebilidad: Fuego, Psiquico, Volador y Hielo\n");
+	printf("\tEvoluciones: Bulbasaur-Ivysaur-Venusaur\n");
+		
+	printf("\t---------\n");
+	printf("\t|Ivysaur|\n");
+	printf("\t---------\n");
+	printf("\tGeneracion: 1\n");
+	printf("\tTipo: Planta y Veneno \n");
+	printf("\tDebilidad: Fuego, Psiquico, Volador y Hielo\n");
+	printf("\tEvoluciones: Bulbasaur-Ivysaur-Venusaur\n");
+
+	
+    printf("\t----------\n");
+	printf("\t|Venusaur|\n");
+	printf("\t----------\n");
+	printf("\tGeneracion: 1\n");
+	printf("\tTipo: Planta y Veneno \n");
+	printf("\tDebilidad: Fuego, Psiquico, Volador y Hielo\n");
+	printf("\tEvoluciones: Bulbasaur-Ivysaur-Venusaur\n");
+	
+	printf("\t------------\n");
+	printf("\t|Charmander|\n");
+	printf("\t------------\n");
+	printf("\tGeneracion: 1\n");
+	printf("\tTipo: Fuego \n");
+	printf("\tDebilidad: Agua, Tierra y Roca\n");
+	printf("\tEvolucion: Charmander-Charmeleon-Charizard\n");
+	
+	printf("\t------------\n");
+	printf("\t|Charmeleon|\n");
+	printf("\t------------\n");
+	printf("\tGeneracion: 1\n");
+	printf("\tTipo: Fuego \n");
+	printf("\tDebilidad: Agua, Tierra y Roca\n");
+	printf("\tEvolucion: Charmander-Charmeleon-Charizard\n");
+	
+	printf("\t-----------\n");
+	printf("\t|Charizard|\n");
+	printf("\t-----------\n");
+	printf("\tGeneracion: 1\n");
+	printf("\tTipo: Fuego y Volador\n");
+	printf("\tDebilidad: Agua, Tierra y Roca\n");
+	printf("\tEvolucion: Charmander-Charmeleon-Charizard\n");
+	
