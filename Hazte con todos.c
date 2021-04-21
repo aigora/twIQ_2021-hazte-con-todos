@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #define N 100
 
 struct equipo {
@@ -13,16 +14,16 @@ int main (){
   int seleccion,volver,i;
   char entrenador[N];
 
-	printf("-------------------------------------\n");
-	printf("|\t*Bienvenido a tu Hemeroteca de , 'HAZTE CON TODOS'*\n|");
-	printf("-------------------------------------\n");
+	printf("\t---------------------------------\n");
+	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
+	printf("\t---------------------------------\n");
 	
   do{
-	printf("\t Pulse 1 para entrar al menu de la \n");
-  	printf("\t Pulse 2 para entrar al creador de equipos\n");
-	printf("\t Si quiere salir pulse 3\n");
-	printf("\t Y si desea saber mas acerca de nosotros pulse 4\n");
-	printf("-------------------------------------\n");
+	printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
+  	printf("\t|Pulse 2 para entrar al creador de equipos\n");
+	printf("\t|Pulse 3 para salir\n");
+	printf("\t|Pulse 4 para saber cosas de los creadores\n");
+	printf("\t-------------------------------------\n");
 	scanf("%d", &seleccion);
 		
 		switch(seleccion){
@@ -31,14 +32,14 @@ int main (){
 				
 				printf("\tIntroduce tu nombre de entrenador:\n");
 				scanf("%s", entrenador);
-				printf("\tBienvenido al menu %s, aqui podra seleccionar el pokemon del que deseas saber acerca\n",entrenador);
-				printf("\tAhora introduzca el numero del pokemon que quieres ver\n"); //De aqui mandara al numero d las pokedex a la que corresponde el pokemon, en el cual se mostrara toda la informacion
+				printf("\tBienvenido al menu %s, aqui podras buscar informacion sobre el pokemon que quieras\n",entrenador);
+				printf("\tAhora introduzca el nonmbre del pokemon que quieres ver\n"); //De aqui mandara al nombre de la pokedex a la que corresponde el pokemon, en el cual se mostrara toda la información
 				scanf("%d", &npokedex);
 			break;
 			
 			case 2:
 				volver=0;
-				printf("\t %s has entrado en el creador de equipos, aqui podras seleccionar los pokemons que habra en tu equipo asi como los objetos que usaras en tus peleas\n", entrenador);
+				printf("\t Bienvenido entrenador, has entrado en el creador de equipos, aqui podras seleccionar los pokemons que habra en tu equipo asi como los objetos que usaras en tus peleas\n");
 				printf("\tAhora indica el nombre de tu primer pokemon\n");
 				scanf("%s",&pokemons[i].pokemon1);
 				printf("\tAhora indica el nombre de tu segundo pokemon\n");
