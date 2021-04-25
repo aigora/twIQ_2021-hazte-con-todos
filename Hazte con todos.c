@@ -119,9 +119,13 @@ int main () {
 			printf("\tIntroduce el numero del pokemon\n");
 			scanf("%d", &nPokedex);
 			break;
+			
+			
 		case 2:
 			printf("\tHa selecionado buscar por el nombre del pokemon\n");
-			
+			printf("\tIntroduce el nombre del pokemon\n");
+			scanf("%d", &nombre);
+				
 			break;
 	}
 	
@@ -148,6 +152,10 @@ int main () {
 		if(m == 0)
 			printf("Pokemon no encontrado\n");
 	}
+
+	
+	
+
 
 	return 0;
 }
