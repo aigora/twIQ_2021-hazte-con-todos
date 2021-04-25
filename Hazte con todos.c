@@ -17,12 +17,18 @@ struct equipo {
 int main () {
 	FILE*fichero;
 	char modoBusqueda;
-	struct buscador poke[6] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[12] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
 								{ "Charmeleon",5,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
-								{"Charizard",6,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"}};
+								{"Charizard",6,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
+								{"Squirtle",7,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
+							    {"Wartortle",8,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
+							    {"Blastoise",9,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
+							    {"Caterpie",10,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
+							    {"Metapod",11,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
+							    {"Butterfree",12,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"} };
 	struct equipo pokemons[3];
 	int seleccion,volver,i,M,p;
 	char entrenador[N],nombre[100];
@@ -133,7 +139,7 @@ int main () {
 	{	
 		printf("\tEscriba el nombre del pokemon\n");
 		scanf("%s",nombre);
-		for(i = 0 ; i < 6; i++){
+		for(i = 0 ; i < 12; i++){
 			if(nombre[0] == poke[i].nombre[0]){ 
 	
 				printf("\t*Pokemon*\n");
@@ -151,6 +157,7 @@ int main () {
 		
 		if(m == 0)
 			printf("Pokemon no encontrado\n");
+	  break; //cambiar
 	}
 
 	
@@ -159,5 +166,3 @@ int main () {
 
 	return 0;
 }
-
-
