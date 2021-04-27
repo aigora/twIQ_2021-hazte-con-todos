@@ -179,21 +179,41 @@ int main () {
 	printf("\tIndica como quiere buscar el pokemon, si desea buscarlo por el numero de la pokedex escriba N, si lo prefiere por nombre escriba M\n");
 	scanf("%s", &modoBusqueda);
 	
-	switch(modoBusqueda){
-		case ('N' || 'n'):
+	if('M' || 'm'){
+		p = 1;
+	}else{
+		p = 2;
+	}
+	switch(p){
+		case 1:
 			printf("\tHa selecionado buscar por el numero de la pokedex\n");
 			printf("\tIntroduce el numero del pokemon\n");
 			scanf("%d", &nPokedex);
+			
+			for(i = 0 ; i < 12 ; i++){
+				if(nPokedex == poke[i].npokedex){
+					
+					printf("\t*Pokemon*\n");
+					printf("\t-----------\n");
+					printf("\t|%s|\n",poke[i].nombre);
+					printf("\tGeneracion: %d\n",poke[i].generacion);
+					printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+					printf("\tTipo: %s\n",poke[i].tipo);
+					printf("\tDebilidad: %s\n",poke[i].debilidad);
+					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+				}
+			}
+			
 			break;
 			
 			
-		case ('M' || 'm'):
+		case 2:
 			printf("\tHa selecionado buscar por el nombre del pokemon\n");
 			while(1){		
 				printf("\tIntroduce el nombre del pokemon\n");
 				scanf("%s", &nombre);
 		
-				for(i = 0 ; i < 12; i++){
+				for(i = 0 ; i < 12 ; i++){
 					if(nombre[i] == poke[i].nombre[i]){ 
 			
 						printf("\t*Pokemon*\n");
@@ -211,11 +231,9 @@ int main () {
 			
 				if(m == 0)
 					printf("Pokemon no encontrado\n");
-			  	break; 
-					
-				break;
+			  	break; 	
 			}
-	
+		break;
 	
 	}
 
