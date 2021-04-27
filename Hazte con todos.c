@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#define N 100
+#define N 10000
 
 struct buscador{
 	char nombre[30];
@@ -53,7 +53,7 @@ int main () {
 
 	do {
 		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
-		printf("\t|Pulse 2 para entrar al creador de equipos\n");
+		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
 		printf("\t-------------------------------------\n");
@@ -69,17 +69,116 @@ int main () {
 
 				break;
 
-			case 2:
-				volver = 0;
-				printf("\t Bienvenido entrenador, has entrado en el creador de equipos, aqui podras seleccionar los pokemons que habra en tu equipo asi como los objetos que usaras en tus peleas\n");
-				//fentrada=fopen("Equipo.txt", "w");
-				printf("\tEscribe el numero de pokemons que habra en el equipo\n");
-				scanf("%d", &M);
-				for(i = 0 ; i < M ; i++){
-					printf("\tEscribe el nombre del pokemon %d\n", i+1);
-					scanf("%s", &pokemons[i].pokemon);
+			case 2:	
+			volver = 0;
+		
+		                printf("\t|Pulse 5 para saber cosas sobre objetos \n");
+		                printf("\t|Pulse 6 para saber cosas de los gimnasios\n");
+		                printf("\t|Pulse 7 para saber cosas de los personajes\n");
+                        printf("\t|Pulse 8 para salir\n");
+		                printf("\t-------------------------------------\n");
+		                scanf("%d", &seleccion);
+		        
+
+		                switch(seleccion) {
+		                	case 5:{
+							
+						  
+					volver = 0;
+	  
+	FILE*fentrada;
+	int y=0,w;
+	char texto[N];
+	
+fentrada = fopen("objetos.txt","r");	
+	if(fentrada == NULL ){
+		printf("No hay fichero\n");
+		return 0;
+	}
+	
+	while(fscanf(fentrada,"%c",&texto[y] )!=EOF){
+		y++;
+	}
+	for (w=0;w<y;w++){
+		printf("%c",texto[w]);
+	}
+	fclose(fentrada);
+	return 0;
+			}
+		                	
+		              	case 6:{
+							
+						  
+					volver = 0;
+	  
+	FILE*fentrada;
+	int y=0,w;
+	char texto[N];
+	
+	fentrada = fopen("gimnasios.txt","r");
+	
+	if(fentrada == NULL ){
+		printf("No hay fichero\n");
+		return 0;
+	}
+	
+	while(fscanf(fentrada,"%c",&texto[y] )!=EOF){
+		y++;
+	}
+	for (w=0;w<y;w++){
+		printf("%c",texto[w]);
+	}
+	fclose(fentrada);
+	return 0;
+			}	        
+	
+	           case 7:{
+	volver = 0;
+	FILE*fentrada;
+	int t=0,g;
+		char texto[N];
+
+	
+	fentrada = fopen("personajes.txt","r");
+	
+	if(fentrada == NULL ){
+		printf("No hay fichero\n");
+		return 0;
+	}
+	
+	while(fscanf(fentrada,"%c",&texto[t] )!=EOF){
+		t++;
+	}
+	for (g=0;g<t;g++){
+		printf("%c",texto[g]);
+	}
+	fclose(fentrada);
+	return 0;
+	}
+	case 8:
+		volver = 0;
+				
+				
+				printf("\tPulse 1 si desea volver a la pantalla de inicio o 2 si quiere salir\n");
+				scanf("%d", &seleccion);
+
+				switch(seleccion) {
+					case 1:
+						printf("\tHas elegido volver al menu\n");
+						volver++;
+						break;
+					case 2:
+						printf("\t!!!Hasta la proxima!!");
+						return 0;
 				}
-				return 0;
+				break;
+	
+	}while(volver == 1);
+	
+	
+        
+		 
+	         
 
 			case 3:
 				printf("\t!!!Hasta la proxima!!!\n");
