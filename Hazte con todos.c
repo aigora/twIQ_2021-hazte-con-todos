@@ -140,14 +140,14 @@ int main () {
 										volver++;
 										break;
 									case 2:
-										printf("\t!!!Hasta la proxima!!");
+										printf("\t!!!Hasta la proxima!!!");
 										return 0;
 								}
 					break;
 				}
 			break;	
 			case 3:
-				printf("\t!!!Hasta la proxima!!!\n");
+				printf("\t!!!Hasta la proxima!!!");
 				return 0;
 
 			case 4:
@@ -194,18 +194,17 @@ int main () {
 			
 		case 2:
 			printf("\tHa selecionado buscar por el nombre del pokemon\n");
-			printf("\tIntroduce el nombre del pokemon\n");
-			scanf("%d", &nombre);
+			
 				
 			break;
 	}
 	
 	while(1)
-	{	
-		printf("\tEscriba el nombre del pokemon\n");
-		scanf("%s",nombre);
+	{		printf("\tIntroduce el nombre del pokemon\n");
+			scanf("%s", &nombre);
+		
 		for(i = 0 ; i < 12; i++){
-			if(nombre[0] == poke[i].nombre[0]){ 
+			if(nombre[i] == poke[i].nombre[i]){ 
 	
 				printf("\t*Pokemon*\n");
 				printf("\t-----------\n");
