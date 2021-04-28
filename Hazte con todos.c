@@ -2,6 +2,9 @@
 #include <string.h>
 #define N 10000
 
+
+
+
 struct buscador{
 	char nombre[30];
 	int npokedex;
@@ -28,12 +31,22 @@ int main () {
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m;
+	
+
 
 	printf("\t---------------------------------\n");
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
 	printf("\t---------------------------------\n");
+	 system("color 04");
+	  system("color 06");
+
+
+	
+
 
 	do {
+		 
+
 		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
@@ -44,6 +57,7 @@ int main () {
 		switch(seleccion) {
 			case 1:
 				volver = 0;
+				system("color 75");
 
 				printf("\tIntroduce tu nombre de entrenador:\n");
 				scanf("%s", entrenador);
@@ -53,6 +67,7 @@ int main () {
 
 			case 2:	
 				volver = 0;
+				system("color AF");
 		
                 printf("\t|Pulse 5 para saber cosas sobre objetos \n");
                 printf("\t|Pulse 6 para saber cosas de los gimnasios\n");
@@ -64,6 +79,7 @@ int main () {
                 switch(seleccion) {
                 	case 5:
 						volver = 0;
+						system("color 46");
 
 						int y = 0, w;
 						char texto[N];
@@ -85,6 +101,7 @@ int main () {
                 	
               		case 6:
 						volver = 0;
+						system("color 0B");
 						
 						int q = 0, a;
 						char texto1[N];
@@ -107,6 +124,7 @@ int main () {
 
 		           case 7:
 						volver = 0;
+						system("color 04");
 						
 						int t = 0, g;
 						char texto2[N];
@@ -130,6 +148,7 @@ int main () {
 	
 					case 8:
 						volver = 0;
+						system("color FC");
 									
 						printf("\tPulse 1 si desea volver al menu principal o 2 si quiere salir\n");
 						scanf("%d", &seleccion);
@@ -152,6 +171,15 @@ int main () {
 
 			case 4:
 				volver = 0;
+				system("color A1");
+				system("color B2");
+				system("color C3");
+				system("color D4");
+				system("color E5");
+				system("color F6");
+				system("color 07");
+				system("color 08");
+				system("color 09");
 				
 				printf("\t========================================\n");
 				printf("\t|Los creadores de este proyecto somos: |\n");
