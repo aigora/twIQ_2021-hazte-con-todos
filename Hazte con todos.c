@@ -131,7 +131,7 @@ int main () {
 					case 8:
 						volver = 0;
 									
-						printf("\tPulse 1 si desea volver a la pantalla de inicio o 2 si quiere salir\n");
+						printf("\tPulse 1 si desea volver al menu principal o 2 si quiere salir\n");
 						scanf("%d", &seleccion);
 				
 								switch(seleccion) {
