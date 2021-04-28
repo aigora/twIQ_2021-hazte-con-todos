@@ -5,6 +5,7 @@
 
 
 
+
 struct buscador{
 	char nombre[30];
 	int npokedex;
