@@ -34,7 +34,7 @@ struct buscador{
 	int generacion;
 	char tipo[100];
 	char debilidad[100];
-	char evoluciones[201];
+	char evoluciones[100];
 	};
 int main () {
 	FILE*fentrada;
@@ -101,7 +101,8 @@ int main () {
 				printf("\tIntroduce tu nombre de entrenador:\n");
 				printf("\t----------------------------------\n");
 				scanf("%s", entrenador);
-				printf("\tBienvenido al menu %s, aqui podras buscar informacion sobre el pokemon que quieras\n",entrenador);
+				printf("\t|Bienvenido al menu %s, aqui podras buscar informacion sobre el pokemon que quieras\n",entrenador);
+				printf("\t------------------------------------------------------------------------------------\n");
 
 				break;
 
@@ -245,7 +246,8 @@ int main () {
 	} while(volver == 1);
 	
 	
-	printf("\tIndica como quiere buscar el pokemon, si desea buscarlo por el numero de la pokedex escriba N, si lo prefiere por nombre escriba M\n");
+	printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
+	printf("\t-------------------------------------------------------------------------------------------\n");
 	scanf("%s", &modoBusqueda);
 	
 	if(modoBusqueda == ('N' || 'n')){
@@ -255,8 +257,10 @@ int main () {
 	}
 	switch(p){
 		case 1:
-			printf("\tHa selecionado buscar por el numero de la pokedex\n");
-			printf("\tIntroduce el numero del pokemon\n");
+		
+			printf("\tIntroduce el numero del pokemon:\n");
+			printf("\t--------------------------------\n");
+
 			scanf("%d", &nPokedex);
 			
 			for(i = 0 ; i < 15 ; i++){
@@ -275,9 +279,9 @@ int main () {
 			
 			break;	
 		case 2:
-			printf("\tHa selecionado buscar por el nombre del pokemon\n");
 			while(1){		
-				printf("\tIntroduce el nombre del pokemon\n");
+				printf("\tIntroduce el nombre del pokemon:\n");
+				printf("\t--------------------------------\n");
 				scanf("%s", &nombre);
 		
 				for(i = 0 ; i < 15 ; i++){
