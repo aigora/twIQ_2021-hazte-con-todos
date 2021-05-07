@@ -27,7 +27,10 @@ int main () {
 							    {"Blastoise",9,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
 							    {"Caterpie",10,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
 							    {"Metapod",11,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
-							    {"Butterfree",12,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"} };
+							    {"Butterfree",12,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
+								{"Weedle",13,1,"Bicho y Veneno","Fuego, Psiquico, Volador y Roca","Weedle-Kakuna-Beedrill"},
+								{"Kakuna",14,1,"Bichoy Veneno","Fuego, Psiquico, Volador y Roca","Weedle-Kakuna-Beedrill"},
+								{"Beedrill",15,1,"Bichoy Veneno","Fuego, Volador y Roca","Weedle-Kakuna-Beedrill"} };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m;
