@@ -7,14 +7,14 @@ void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
     printf("                      @@@@@@@@#############@@@@@@@@                \n");         
     printf("                   @@@@@#########################@@@@@             \n");          
-    printf("                @@@@%###############################&@@@@          \n");           
+    printf("                @@@@################################&@@@@          \n");           
     printf("              @@@@#####################################@@@@        \n");          
     printf("            @@@@#########################################@@@@      \n");          
-    printf("           @@@%###########################################&@@@     \n");          
+    printf("           @@@############################################&@@@     \n");          
     printf("          @@@###############################################@@@    \n");        
-    printf("         @@@&##################&@@@@@@@@@%##################@@@@   \n");          
+    printf("         @@@###################&@@@@@@@@@###################@@@@   \n");          
     printf("         @@@#################@@@@       @@@@#################@@@   \n");         
-    printf("         @@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@   \n");          
+    printf("         @@@@@@@@@@@@@@@@@@@@@@@   :)      @@@@@@@@@@@@@@@@@@@@@@@   \n");          
     printf("         @@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@   \n");         
     printf("         @@@                 @@@@       @@@@                 @@@   \n");         
     printf("         @@@&                  &@@@@@@@@@#                  @@@@   \n");         
@@ -39,7 +39,7 @@ struct buscador{
 int main () {
 	FILE*fentrada;
 	char modoBusqueda;
-	struct buscador poke[15] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[62] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
@@ -53,7 +53,57 @@ int main () {
 							    {"Butterfree",12,1,"Bicho","Fuego, Volador y Roca","Caterpie-Metapod-Butterfree"},
 								{"Weedle",13,1,"Bicho y Veneno","Fuego, Psiquico, Volador y Roca","Weedle-Kakuna-Beedrill"},
 								{"Kakuna",14,1,"Bichoy Veneno","Fuego, Psiquico, Volador y Roca","Weedle-Kakuna-Beedrill"},
-								{"Beedrill",15,1,"Bichoy Veneno","Fuego, Volador y Roca","Weedle-Kakuna-Beedrill"} };
+								{"Beedrill",15,1,"Bichoy Veneno","Fuego, Volador y Roca","Weedle-Kakuna-Beedrill"},
+								{"Pidgey",16,1,"Normal y Volador","Eléctrico, Hielo y Roca","Pidgey-Pidgeotto-Pidgeot"},
+								{"Pidgeotto",17,1,"Normal y Volador","Eléctrico, Hielo y Roca","Pidgey-Pidgeotto-Pidgeot"},
+								{"Pidgeot",18,1,"Normal y Volador","Eléctrico, Hielo y Roca","Pidgey-Pidgeotto-Pidgeot"},
+								{"Rattata",19,1,"Normal","Lucha","Rattata-Raticate"},
+								{"Raticate",20,1,"Normal","Lucha","Rattata-Raticate"},
+{"Spearow",21,1,"Normal y Volador","Eléctrico, Hielo y Roca","Spearow-Fearow"},
+{"Fearow",22,1,"Normal y Volador","Eléctrico, Hielo y Roca","Spearow-Fearow"},
+{"Ekans",23,1,"Veneno","Psiquico y Tierra","Ekans-Arbok"},
+{"Arbok",24,1,"Veneno","Psiquico y Tierra","Ekans-Arbok"},
+{"Pikachu",25,1,"Eléctrico","Tierra","Pichu-Pikachu-Raichu"},
+{"Raichu",26,1,"Eléctrico","Tierra","Pichu-Pikachu-Raichu"},
+{"Sandshrew",27,1,"Tierra","Agua, Planta y Hielo","Sandshrew-Sandslash"},
+{"Sandslash",28,1,"Tierra","Agua, Planta y Hielo","Sandshrew-Sandslash"},
+{"Nidoran-hembra",29,1,"Veneno","Psiquico y Tierra","Nidoran-Nidorina-Nidoqueen"},
+{"Nidorina",30,1,"Veneno","Psiquico y Tierra","Nidoran-Nidorina-Nidoqueen"},
+{"Nidoqueen",31,1,"Veneno","Agua, Psiquico, Hielo y Tierra","Nidoran-Nidorina-Nidoqueen"},
+{"Nidoran-macho",32,1,"Veneno","Psiquico y Tierra","Nidoran-Nidorino-Nidoking"},
+{"Nidorino",33,1,"Veneno","Psiquico y Tierra","Nidoran-Nidorino-Nidoking"},
+{"Nidoking",34,1,"Veneno","Agua, Psiquico, Hielo y Tierra","Nidoran-Nidorino-Nidoking"},
+{"Clefairy",35,1,"Hada","Acero y Veneno","Cleffa-Clefairy-Clefable"},
+{"Clefable",36,1,"Hada","Acero y Veneno","Cleffa-Clefairy-Clefable"},
+{"Vulpix",37,1,"Fuego","Agua, Tierra y Roca","Vulpix-Ninetales"},
+{"Ninetales",38,1,"Fuego","Agua, Tierra y Roca","Vulpix-Ninetales"},
+{"Jigglypuff",39,1,"Normal y Hada","Acero y Veneno","Igglypuff-Jigglypuff-Wigglytuff"},
+{"Wigglytuff",40,1,"Normal y Hada","Acero y Veneno","Igglypuff-Jigglypuff-Wigglytuff"},
+{"Zubat",41,1,"Veneno y Volador","Psiquico, Eléctrico, Hielo y Roca","Zubat-Golbat-Crobat"},
+{"Golbat",42,1,"Veneno y Volador","Psiquico, Eléctrico, Hielo y Roca","Zubat-Golbat-Crobat"},
+{"Oddish",43,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Oddish-Gloom-Villeplum"},
+{"Gloom",44,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Oddish-Gloom-Villeplum"},
+{"Villeplum",45,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Oddish-Gloom-Villeplum"},
+{"Paras",46,1,"Bicho y Planta","Fuego, Volador, Hielo, Veneno, Bicho y Roca","Paras-Parasect"},
+{"Parasect",47,1,"Bicho y Planta","Fuego, Volador, Hielo, Veneno, Bicho y Roca","Paras-Parasect"},
+{"Venonat",48,1,"Bicho y Veneno","Fuego, Psiquico, Volador y Roca","Venonat-Venomoth"},
+{"Venomoth",49,1,"Bichoy Veneno","Fuego, Psiquico, Volador y Roca","Venonat-Venomoth"},
+{"Diglett",50,1,"Tierra","Agua, Planta y Hielo","Diglett-Dugtrio"},
+{"Dugtrio",51,1,"Tierra","Agua, Planta y Hielo","Diglett-Dugtrio"},
+{"Meowth",52,1,"Normal","Lucha","Meowth-Persian"},
+{"Persian",53,1,"Normal","Lucha","Meowth-Persian"},
+{"Psyduck",54,1,"Agua","Planta y Eléctrico","Psyduck-Golduck"},
+{"Golduck",55,1,"Agua","Planta y Eléctrico","Psyduck-Golduck"},
+{"Monke",56,1,"Lucha","Psiquico, Volador y Hada","Mankey-Primeape"},
+{"Primeape",57,1,"Lucha","Psiquico, Volador y Hada","Mankey-Primeape"},
+{"Growlithe",58,1,"Fuego","Agua, Tierra y Roca","Growlithe-Arcanine"},
+{"Arcanine",59,1,"Fuego","Agua, Tierra y Roca","Growlithe-Arcanine"},
+{"Poliwag",60,1,"Agua","Planta y Eléctrico","Poliwag-Poliwhirl-Poliwrath"},
+{"Poliwhirl",61,1,"Agua","Planta y Eléctrico","Poliwag-Poliwhirl-Poliwrath"},
+{"Poliwrath",62,1,"Agua y Lucha","Planta, Eléctrico, Volador, Hada y Psiquico ","Poliwag-Poliwhirl-Poliwrath"}
+
+								
+								 };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m, j;
