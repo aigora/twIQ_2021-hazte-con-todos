@@ -3,7 +3,27 @@
 #define N 10000
 
 
-
+void imprimirPokeball(){
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@(((((((((@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@&(((((((((((((((((###@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@((((((((((((((((((((((####@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@((((((((((((((((((((((((((####@@@@@@@@@\n");
+	printf("@@@@@@@@@(((((((((((((((((((((((((((((####@@@@@@@@\n");
+	printf("@@@@@@@@((((((((((((@@@@@@@@@@#(((((((#####@@@@@@@\n");
+	printf("@@@@@@@@(((((((((((@@@       @@@(((((((#####@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@            @@@       @@@       ....@@@@@@@\n");
+	printf("@@@@@@@@            ,@@@@@@@@@        .....@@@@@@@\n");
+	printf("@@@@@@@@@                             ....@@@@@@@@\n");
+	printf("@@@@@@@@@@                           ...@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@                       ...@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@                  ..@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+}
 
 struct buscador{
 	char nombre[30];
@@ -11,7 +31,7 @@ struct buscador{
 	int generacion;
 	char tipo[100];
 	char debilidad[100];
-	char evoluciones[200];
+	char evoluciones[201];
 	};
 int main () {
 	FILE*fentrada;
@@ -44,10 +64,11 @@ int main () {
 
 
 
-
-	printf("\t\nIntroduce cualquier tecla\n\n");
+	imprimirPokeball();
+	printf("\n\tIntroduce cualquier tecla\n\n");
     scanf("%s");
     system("cls");
+	
 
 	printf("\t---------------------------------\n");
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
@@ -55,14 +76,13 @@ int main () {
 	 system("color 04");
 	
 
-
 	
 
 
 	do {
 		 
 
-		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
+		printf("\n\t|Pulse 1 para entrar al menu de la Pokedex \n");
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
