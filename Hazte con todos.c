@@ -3,7 +3,27 @@
 #define N 10000
 
 
-
+void imprimirPokeball(){
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@(((((((((@@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@&(((((((((((((((((###@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@((((((((((((((((((((((####@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@((((((((((((((((((((((((((####@@@@@@@@@\n");
+	printf("@@@@@@@@@(((((((((((((((((((((((((((((####@@@@@@@@\n");
+	printf("@@@@@@@@((((((((((((@@@@@@@@@@#(((((((#####@@@@@@@\n");
+	printf("@@@@@@@@(((((((((((@@@       @@@(((((((#####@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@            @@@       @@@       ....@@@@@@@\n");
+	printf("@@@@@@@@            ,@@@@@@@@@        .....@@@@@@@\n");
+	printf("@@@@@@@@@                             ....@@@@@@@@\n");
+	printf("@@@@@@@@@@                           ...@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@                       ...@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@                  ..@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+}
 
 struct buscador{
 	char nombre[30];
@@ -41,17 +61,18 @@ int main () {
 
 
 
-
-	printf("\t\nIntroduce cualquier tecla\n\n");
+	imprimirPokeball();
+	printf("\n\tIntroduce cualquier tecla\n\n");
     scanf("%s");
     system("cls");
+	
 
 	printf("\t---------------------------------\n");
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
 	printf("\t---------------------------------\n");
 	 system("color 04");
 	  system("color 06");
-
+	
 
 	
 
@@ -59,7 +80,7 @@ int main () {
 	do {
 		 
 
-		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
+		printf("\n\t|Pulse 1 para entrar al menu de la Pokedex \n");
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
