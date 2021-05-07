@@ -31,7 +31,7 @@ struct buscador{
 	int generacion;
 	char tipo[100];
 	char debilidad[100];
-	char evoluciones[200];
+	char evoluciones[201];
 	};
 int main () {
 	FILE*fentrada;
