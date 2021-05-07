@@ -126,9 +126,6 @@ int main () {
 	 system("color 04");
 	
 
-	
-
-
 	do {
 		 
 
