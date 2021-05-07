@@ -11,16 +11,16 @@ struct buscador{
 	int generacion;
 	char tipo[100];
 	char debilidad[100];
-	char evoluciones[100];
+	char evoluciones[200];
 	};
 int main () {
 	FILE*fentrada;
 	char modoBusqueda;
-	struct buscador poke[12] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[151] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
-								{ "Charmeleon",5,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
+								{"Charmeleon",5,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
 								{"Charizard",6,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
 								{"Squirtle",7,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
 							    {"Wartortle",8,1,"Agua","Planta y Electrico","Squirtle-Wartortle-Blastoise"},
@@ -218,7 +218,7 @@ int main () {
 			printf("\tIntroduce el numero del pokemon\n");
 			scanf("%d", &nPokedex);
 			
-			for(i = 0 ; i < 12 ; i++){
+			for(i = 0 ; i < 151 ; i++){
 				if(nPokedex == poke[i].npokedex){
 					
 					printf("\t*Pokemon*\n");
@@ -239,7 +239,7 @@ int main () {
 				printf("\tIntroduce el nombre del pokemon\n");
 				scanf("%s", &nombre);
 		
-				for(i = 0 ; i < 12 ; i++){
+				for(i = 0 ; i < 151 ; i++){
 					if(nombre[i] == poke[i].nombre[i]){ 
 			
 						printf("\t*Pokemon*\n");
