@@ -4,25 +4,28 @@
 
 
 void imprimirPokeball(){
-	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@(((((((((@@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@&(((((((((((((((((###@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@((((((((((((((((((((((####@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@((((((((((((((((((((((((((####@@@@@@@@@\n");
-	printf("@@@@@@@@@(((((((((((((((((((((((((((((####@@@@@@@@\n");
-	printf("@@@@@@@@((((((((((((@@@@@@@@@@#(((((((#####@@@@@@@\n");
-	printf("@@@@@@@@(((((((((((@@@       @@@(((((((#####@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@            @@@       @@@       ....@@@@@@@\n");
-	printf("@@@@@@@@            ,@@@@@@@@@        .....@@@@@@@\n");
-	printf("@@@@@@@@@                             ....@@@@@@@@\n");
-	printf("@@@@@@@@@@                           ...@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@                       ...@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@                  ..@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@\n");
-	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+ 	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
+    printf("                      @@@@@@@@#############@@@@@@@@                \n");         
+    printf("                   @@@@@#########################@@@@@             \n");          
+    printf("                @@@@%###############################&@@@@          \n");           
+    printf("              @@@@#####################################@@@@        \n");          
+    printf("            @@@@#########################################@@@@      \n");          
+    printf("           @@@%###########################################&@@@     \n");          
+    printf("          @@@###############################################@@@    \n");        
+    printf("         @@@&##################&@@@@@@@@@%##################@@@@   \n");          
+    printf("         @@@#################@@@@       @@@@#################@@@   \n");         
+    printf("         @@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@   \n");          
+    printf("         @@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@   \n");         
+    printf("         @@@                 @@@@       @@@@                 @@@   \n");         
+    printf("         @@@&                  &@@@@@@@@@#                  @@@@   \n");         
+    printf("          @@@                                               @@@    \n");         
+    printf("           @@@*                                           #@@@     \n");         
+    printf("            @@@@                                         @@@@      \n");         
+    printf("              @@@@                                     @@@@        \n");         
+    printf("                @@@@#                               @@@@@          \n");         
+    printf("                   @@@@@                         @@@@@             \n");         
+    printf("                      @@@@@@@@,           *@@@@@@@&                \n");         
+    printf("                            @@@@@@@@@@@@@@@@@                      \n");    
 }
 
 struct buscador{
@@ -36,7 +39,7 @@ struct buscador{
 int main () {
 	FILE*fentrada;
 	char modoBusqueda;
-	struct buscador poke[151] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[15] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
@@ -53,7 +56,7 @@ int main () {
 								{"Beedrill",15,1,"Bichoy Veneno","Fuego, Volador y Roca","Weedle-Kakuna-Beedrill"} };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
-	int nPokedex, m;
+	int nPokedex, m, j;
 	
 	
 	
@@ -256,7 +259,7 @@ int main () {
 			printf("\tIntroduce el numero del pokemon\n");
 			scanf("%d", &nPokedex);
 			
-			for(i = 0 ; i < 151 ; i++){
+			for(i = 0 ; i < 15 ; i++){
 				if(nPokedex == poke[i].npokedex){
 					
 					printf("\t*Pokemon*\n");
@@ -277,19 +280,21 @@ int main () {
 				printf("\tIntroduce el nombre del pokemon\n");
 				scanf("%s", &nombre);
 		
-				for(i = 0 ; i < 151 ; i++){
-					if(nombre[i] == poke[i].nombre[i]){ 
-			
-						printf("\t*Pokemon*\n");
-						printf("\t-----------\n");
-						printf("\t|%s|\n",poke[i].nombre);
-						printf("\tGeneracion: %d\n",poke[i].generacion);
-						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-						printf("\tTipo: %s\n",poke[i].tipo);
-						printf("\tDebilidad: %s\n",poke[i].debilidad);
-						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-						
-						m++;
+				for(i = 0 ; i < 15 ; i++){
+					for(j = 0; j < 15; j++){
+						if(nombre[j] == poke[i].nombre[j]){ 
+				
+							printf("\t*Pokemon*\n");
+							printf("\t-----------\n");
+							printf("\t|%s|\n",poke[i].nombre);
+							printf("\tGeneracion: %d\n",poke[i].generacion);
+							printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+							printf("\tTipo: %s\n",poke[i].tipo);
+							printf("\tDebilidad: %s\n",poke[i].debilidad);
+							printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+							
+							m++;
+						}
 					}
 				}
 			
