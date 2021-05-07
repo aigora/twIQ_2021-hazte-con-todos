@@ -35,7 +35,16 @@ int main () {
 	char entrenador[N], nombre[100];
 	int nPokedex, m;
 	
+	printf("\t-----------------\n");
+	printf("\t|HAZTE CON TODOS|\n");
+	printf("\t-----------------\n");
 
+
+
+
+	printf("\t\nIntroduce cualquier tecla\n\n");
+    scanf("%s");
+    system("cls");
 
 	printf("\t---------------------------------\n");
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
@@ -56,6 +65,7 @@ int main () {
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
 		printf("\t-------------------------------------\n");
 		scanf("%d", &seleccion);
+		system("cls");
 
 		switch(seleccion) {
 			case 1:
@@ -63,6 +73,7 @@ int main () {
 				system("color 75");
 
 				printf("\tIntroduce tu nombre de entrenador:\n");
+				printf("\t----------------------------------\n");
 				scanf("%s", entrenador);
 				printf("\tBienvenido al menu %s, aqui podras buscar informacion sobre el pokemon que quieras\n",entrenador);
 
@@ -78,6 +89,7 @@ int main () {
                 printf("\t|Pulse 8 para volver al menu o salir del programa\n");
                 printf("\t-------------------------------------\n");
                 scanf("%d", &seleccion);
+                system("cls");
         
                 switch(seleccion) {
                 	case 5:
