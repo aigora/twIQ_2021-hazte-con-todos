@@ -35,6 +35,9 @@ int main () {
 	char entrenador[N], nombre[100];
 	int nPokedex, m;
 	
+	
+	
+	system("color 06");
 	printf("\t-----------------\n");
 	printf("\t|HAZTE CON TODOS|\n");
 	printf("\t-----------------\n");
@@ -50,7 +53,7 @@ int main () {
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
 	printf("\t---------------------------------\n");
 	 system("color 04");
-	  system("color 06");
+	
 
 
 	
