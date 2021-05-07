@@ -5,7 +5,6 @@
 
 
 
-
 struct buscador{
 	char nombre[30];
 	int npokedex;
@@ -208,7 +207,7 @@ int main () {
 	printf("\tIndica como quiere buscar el pokemon, si desea buscarlo por el numero de la pokedex escriba N, si lo prefiere por nombre escriba M\n");
 	scanf("%s", &modoBusqueda);
 	
-	if('M' || 'm'){
+	if(modoBusqueda == ('N' || 'n')){
 		p = 1;
 	}else{
 		p = 2;
@@ -233,9 +232,7 @@ int main () {
 				}
 			}
 			
-			break;
-			
-			
+			break;	
 		case 2:
 			printf("\tHa selecionado buscar por el nombre del pokemon\n");
 			while(1){		
