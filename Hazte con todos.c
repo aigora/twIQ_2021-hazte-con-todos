@@ -103,7 +103,7 @@ int main () {
 								{"Poliwrath",62,1,"Agua y Lucha","Planta, Eléctrico, Volador, Hada y Psiquico ","Poliwag-Poliwhirl-Poliwrath"} };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
-	int nPokedex, m, j;
+	int nPokedex, m;
 	
 	
 	
@@ -326,30 +326,28 @@ int main () {
 			printf("\tIntroduce el nombre del pokemon:\n");
 			printf("\t--------------------------------\n");
 			scanf("%s", &nombre);
-			
+		do{
 			m = 0;
 			for(i = 0 ; i < 62 ; i++){
-				for(j = 0; j < 62; j++){
-					if(nombre[j] == poke[i].nombre[j]){ 
-						
-						printf("\t*Pokemon*\n");
-						printf("\t-----------\n");
-						printf("\t|%s|\n",poke[i].nombre);
-						printf("\tGeneracion: %d\n",poke[i].generacion);
-						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-						printf("\tTipo: %s\n",poke[i].tipo);
-						printf("\tDebilidad: %s\n",poke[i].debilidad);
-						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-						
-						m++;
-					}
-				}
+				if(strcmp(nombre, poke[i].nombre) == 0){ 
+					
+					printf("\t*Pokemon*\n");
+					printf("\t-----------\n");
+					printf("\t|%s|\n",poke[i].nombre);
+					printf("\tGeneracion: %d\n",poke[i].generacion);
+					printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+					printf("\tTipo: %s\n",poke[i].tipo);
+					printf("\tDebilidad: %s\n",poke[i].debilidad);
+					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+					
+					m++;	
+				}	
 			}
+		}while(m == 0);
 		
-			if(m == 0)
-				printf("Pokemon no encontrado\n");
-		
+		break;	
 	}
 	
 	return 0;
 }
+
