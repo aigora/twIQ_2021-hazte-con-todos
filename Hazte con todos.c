@@ -38,7 +38,7 @@ struct buscador{
 	};
 int main () {
 	FILE*fentrada;
-	char buscar;
+	char buscar, opcion1;
 	struct buscador poke[62] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
@@ -103,7 +103,7 @@ int main () {
 								{"Poliwrath",62,1,"Agua y Lucha","Planta, Eléctrico, Volador, Hada y Psiquico ","Poliwag-Poliwhirl-Poliwrath"} };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
-	int nPokedex, m;
+	int nPokedex, m, regresar;
 	
 	
 	
@@ -291,68 +291,97 @@ int main () {
 		}	
 	} while(volver == 1);
 	
-	
-	printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
-	printf("\t-------------------------------------------------------------------------------------------\n");
-	scanf("%s", &buscar);
-	system("cls");
-	
-	if(buscar == ('N'))
-		p = 1;
-	else if(buscar == 'M')
-		p = 2;
-	
-	switch(p){
-		case 1:
-			
-			printf("\tIntroduce el numero del pokemon:\n");
-			printf("\t--------------------------------\n");
-			scanf("%d", &nPokedex);
-			
-			for(i = 0 ; i < 62 ; i++){
-				if(nPokedex == poke[i].npokedex){
-					
-					printf("\t*Pokemon*\n");
-					printf("\t-----------\n");
-					printf("\t|%s|\n",poke[i].nombre);
-					printf("\tGeneracion: %d\n",poke[i].generacion);
-					printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-					printf("\tTipo: %s\n",poke[i].tipo);
-					printf("\tDebilidad: %s\n",poke[i].debilidad);
-					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-					printf("\t---------------------------------------\n");
+	do{
+		printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
+		printf("\t-------------------------------------------------------------------------------------------\n");
+		scanf("%s", &buscar);
+		system("cls");
+		
+		if(buscar == ('N'))
+			p = 1;
+		else if(buscar == 'M')
+			p = 2;
+		
+		switch(p){
+			case 1:
+				
+				regresar = 0;
+				
+				printf("\tIntroduce el numero del pokemon:\n");
+				printf("\t--------------------------------\n");
+				scanf("%d", &nPokedex);
+				
+				for(i = 0 ; i < 62 ; i++){
+					if(nPokedex == poke[i].npokedex){
+						
+						printf("\t*Pokemon*\n");
+						printf("\t-----------\n");
+						printf("\t|%s|\n",poke[i].nombre);
+						printf("\tGeneracion: %d\n",poke[i].generacion);
+						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+						printf("\tTipo: %s\n",poke[i].tipo);
+						printf("\tDebilidad: %s\n",poke[i].debilidad);
+						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+						printf("\t---------------------------------------\n");
+					}
 				}
-			}
-			break;
-		
-		case 2:
-					
-			printf("\tIntroduce el nombre del pokemon:\n");
-			printf("\t--------------------------------\n");
-			scanf("%s", &nombre);
-		do{
-			m = 0;
-			for(i = 0 ; i < 62 ; i++){
-				if(strcmp(nombre, poke[i].nombre) == 0){ 
-					
-					printf("\t*Pokemon*\n");
-					printf("\t-----------\n");
-					printf("\t|%s|\n",poke[i].nombre);
-					printf("\tGeneracion: %d\n",poke[i].generacion);
-					printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-					printf("\tTipo: %s\n",poke[i].tipo);
-					printf("\tDebilidad: %s\n",poke[i].debilidad);
-					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-					printf("\t---------------------------------------\n");
-					
-					m++;	
-				}	
-			}
-		}while(m == 0);
-		
-		break;	
-	}
-	
+				printf("\t¿Desean consultar algun otro pokemon?\n");
+				printf("\tEscriba S o N");
+				scanf("%c", &opcion1);
+				
+				switch(opcion1){
+					case 'S':
+						regresar++;
+					break;
+					case 'N':
+						printf("\tHasta la proximaaa!!!!!\n");
+					return 0;	
+				}
+				
+				break;
+			
+			case 2:
+				regresar = 0;	
+				printf("\tIntroduce el nombre del pokemon:\n");
+				printf("\t--------------------------------\n");
+				scanf("%s", &nombre);
+			do{
+				m = 0;
+				for(i = 0 ; i < 62 ; i++){
+					if(strcmp(nombre, poke[i].nombre) == 0){ 
+						
+						printf("\t*Pokemon*\n");
+						printf("\t-----------\n");
+						printf("\t|%s|\n",poke[i].nombre);
+						printf("\tGeneracion: %d\n",poke[i].generacion);
+						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+						printf("\tTipo: %s\n",poke[i].tipo);
+						printf("\tDebilidad: %s\n",poke[i].debilidad);
+						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+						printf("\t---------------------------------------\n");
+						
+						m++;	
+					}	
+				}
+			}while(m == 0);
+			
+			printf("\t¿Desean consultar algun otro pokemon?\n");
+				printf("\tEscriba S o N");
+				scanf("%s", opcion1);
+				
+				switch(opcion1){
+					case 'S':
+						regresar++;
+					break;
+					case 'N':
+						printf("\tHasta la proximaaa!!!!!\n");
+					return 0;	
+				}
+			
+			break;	
+		}
+	}while(regresar == 1);
+
 	return 0;
 }
 
