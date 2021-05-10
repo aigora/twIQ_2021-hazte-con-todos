@@ -114,7 +114,7 @@ int main () {
 
 
 
-	imprimirPokeball();
+	
 	printf("\n\tIntroduce cualquier tecla\n\n");
     scanf("%s");
     system("cls");
@@ -266,15 +266,17 @@ int main () {
 				system("color 07");
 				system("color 08");
 				system("color 09");
+				imprimirPokeball();
 				
 				printf("\t========================================\n");
 				printf("\t|Los creadores de este proyecto somos: |\n");
 				printf("\t------*Constantino Janeiro Catena*------\n");
 				printf("\t-------*Adrian Langarica Esteban*-------\n");
-				printf("\t------*Ruben Ernesto Godoy Salcedo*------\n");
+				printf("\t------*Ruben Ernesto Godoy Salcedo*-----\n");
 				printf("\t========================================\n");
 				printf("\tPulse 1 si desea volver a la pantalla de inicio o 2 si quiere salir\n");
 				scanf("%d", &seleccion);
+				
 
 				switch(seleccion) {
 					case 1:
@@ -293,6 +295,7 @@ int main () {
 	printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
 	printf("\t-------------------------------------------------------------------------------------------\n");
 	scanf("%s", &buscar);
+	system("cls");
 	
 	if(buscar == ('N'))
 		p = 1;
@@ -317,6 +320,7 @@ int main () {
 					printf("\tTipo: %s\n",poke[i].tipo);
 					printf("\tDebilidad: %s\n",poke[i].debilidad);
 					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+					printf("\t---------------------------------------\n");
 				}
 			}
 			break;
@@ -339,6 +343,7 @@ int main () {
 					printf("\tTipo: %s\n",poke[i].tipo);
 					printf("\tDebilidad: %s\n",poke[i].debilidad);
 					printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+					printf("\t---------------------------------------\n");
 					
 					m++;	
 				}	
