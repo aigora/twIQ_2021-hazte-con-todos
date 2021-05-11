@@ -1,0 +1,109 @@
+En el juego hay diferentes objetos que aparecen durante la aventura.
+
+- Ámbar Viejo:
+Se trata de un fragmento de ámbar fosilizado, que es una resina dentro de la cual se conserva intacto el material genético de un ser vivo. 
+Es el único fósil que presenta en ambar, pues el resto se encuentran en roca.
+
+- Bicicleta:
+Es un objeto clave introducido en la primera generación que sirve para desplazarse más rápido. 
+También se utiliza para pasar por el camino de bicis, puesto que andando no se puede ir, 
+y para superar algunos obstáculos que a pie no se puede.
+
+- Bono bici:
+Se trata de un cupón que puede canjearse por una bicicleta en la tienda de bicis de ciudad Celeste.
+
+El bono cubre el precio completo de la bici, con lo que solo hay que entregárselo al dependiente y 
+al momento te entregará una bicicleta nueva. Sin el bono, una bici cuesta 1.000.000
+(suma de dinero imposible de pagar, puesto que el límite de dinero posible a tener en el 
+juego es de 999.999 pokeyen).
+De esta forma, solo se puede obtener una bici y es obligado que sea utilizando el bono bici.
+
+- Buscapelea:
+Objeto que sirve para volver a combatir contra los entrenadores Pokémon con los cuales hemos luchado,
+a modo de revancha.
+
+
+- Buscaobjetos:
+Sirve para buscar objetos ocultos en el terreno, que pueden estar en una ruta, una zona urbana o incluso en el interior de un edificio. 
+Cuanto más intenso sea el sonido más cerca estás del objeto.
+
+- Caña buena
+Es una de las tres cañas de pescar que sirve para atrapar Pokémon en zonas de agua. Es la versión intermedia. 
+Los Pokémon no son de niveles muy bajos y a veces puede picar algún Pokémon exótico. Está nuevecita y es de buena calidad.
+
+- Caña vieja
+Es una de las tres cañas de pescar que sirve para atrapar Pokémon en zonas de agua. Es la peor de las tres ya que pesca los Pokémon de bajo nivel y especies comunes.
+Está desgastada por el uso que su anterior dueño ha hecho de ella.
+
+- Correo Oak:
+Al entrar en la tienda Pokémon de la ciudad Verde, el dependiente te sorprenderá entregándote un paquete para el profesor Oak, el correo Oak. 
+Al hacerlo en pueblo Paleta, el profesor te lo agradecerá entregándote tu Pokédex y cinco Poké Balls, 
+con lo que además el camino de ciudad Verde habrá quedado desbloqueado.
+
+- Dientes oro:
+Es la dentadura postiza del guardia de la Zona Safari.
+Cuando llegues a ciudad Fucsia, le podrás encontrar en la casa que hay en la esquina sureste, 
+donde hay dos casitas juntas. La suya es la de la izquierda. Si tratas de hablar con él, verás que 
+es incapaz de articular palabra. 
+Esto se debe a que ha perdido su dentadura postiza de oro.
+Deberás buscar la dentadura en la Zona Safari. 
+
+- Fósil domo:
+El fósil domo es un objeto introducido en la primera generación que se trata de un fósil Pokémon. 
+Se trata de un fragmento de piedra en el que se encuentra una silueta con forma de caparazón grabada, y pertenece a un Pokémon ancestral que vivió en el fondo del mar.
+Para revivir el fósil domo, en la primera generación se debe acudir al Laboratorio de Isla Canela, donde un científico examinará el fósil.
+El Pokémon revivido gracias al fósil domo es Kabuto. 
+
+
+- Fósil hélix:
+El Fósil hélix es un objeto introducido en la primera generación que se trata de un fósil Pokémon. 
+Es un fragmento de piedra en el que se encuentra una silueta con forma de concha marina grabada que pertenece a un Pokémon ancestral que vivió en el fondo del mar.
+El Pokémon revivido gracias al fósil hélix es Omanyte. 
+
+- Llave ascensor:
+Sirve para poder utilizar el ascensor de la guarida del Team Rocket y así poder moverse a través de las instalaciones.
+
+- Llave magnética:
+Sirve para poder moverse por las oficinas de Silph S.A., abriendo todas las puertas que bloquean partes del camino.
+
+- Llave secreta:
+Sirve para poder acceder al gimnasio de isla Canela y poder enfrentarse así a líder Blaine.
+
+- Mapa:
+Se trata de un utensilio que señala todos los pueblos, villas y ciudades de la región.
+Se obtiene al principio de tu aventura, además de que varios mapas se encuentran en los centros pokemons.
+
+- Memorín:
+Se trata de una especie de mini-agenda electrónica que registra algunas conversaciones o información sobre los personajes principales del juego.
+
+- Monedero:
+Sirve para guardar las fichas obtenidas en el casino y así poder jugar en este.
+
+- Pociones :
+Son objetos que curan los puntos de vida de pokemons.
+Según el tipo de poción, curan cierta cantidad de PS. 
+Se pueden emplear tanto en combate como fuera de ella. 
+
+- Pokeball:
+Mecanismo para capturar pokemons.
+Es un objeto básico para la aventura ya que es con ellas se puede ampliar el equipo pokemon.
+
+- Poké flauta:
+Se trata de una flauta de color rojo y blancoque "consigue despertar al instante a cualquier pokemon y suena de maravilla".
+Con ella se puede despertar al Snorlax que está dormido en la ruta 69 y poder continuar por el camino.
+
+- Poké Tele:
+Es un tipo de guía para los entrenadores novatos que enseña sobre diversos temas acerca del mundo Pokémon. 
+
+- Saco bayas:
+Sirve para guardar y organizar las bayas que se pueden obtener a lo largo del videojuego.
+
+- Scope Silph:
+Se trata de unas gafas que permiten ver a los Pokémon de tipo fantasma.
+
+- Supercaña:
+Es una de las tres cañas de pescar que sirve para atrapar Pokémon en zonas de agua. Es la que presenta las mayores posibilidades de avistar Pokémon de alto nivel o de especies exóticas. 
+Se trata de una increíble caña de pescar de alta tecnología.
+
+- Tubo MT/MO:
+Sirve para guardar y organizar todas las máquinas técnicas («MT») y ocultas («MO») que el jugador encuentra a lo largo del videojuego.
