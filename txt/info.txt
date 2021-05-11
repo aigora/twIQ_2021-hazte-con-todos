@@ -1,0 +1,12 @@
+Información de programa:
+------------------------
+
+1. La opción 1, en esta opción puedes buscar el pokemon del que deseas saber su información. Puedes buscar por nombre o por número de la pokedex.
+2. La opción 2, en esta opción puedes acceder a otro menu en el que puedes acceder a otras opciones( 5,6,7,8 y 9).
+   En la opción 6 puedes saber información de los objetos que se usan en el juego. 
+   En la opción 7 puedes sabe información de los gimnasios en los que debes luchar. 
+   En la opción 8 puedes saber información de los personajes del videojuego y algunas de las misiones que te pueden ofrecer.
+   En la opción 9 puedes salir al menu principal o salir del programa.
+3. La opción 3, en esta opción puedes salir del programa.
+4. La opción 4, en esta opción puedes saber información sobre sus creadores.
+5. La opción 5, es el texto que estas leyendo ahora y te dice que hace cada opción.
