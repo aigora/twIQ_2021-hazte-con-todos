@@ -223,12 +223,12 @@ int main () {
 	do {
 		 
 
-		printf("\n\t|Pulse 1 para entrar al menu de la Pokedex \n");
+		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
 		printf("\t|Pulse 5 para info del programa sobre como usarlo\n");
-		printf("\t-------------------------------------\n");
+		printf("\t---------------------------------\n");
 		scanf("%d", &seleccion);
 		system("cls");
 
@@ -279,8 +279,8 @@ int main () {
 							}
 							printf("\t--------------------------------------- \n");
 							printf("\t|¿Desean consultar algun otro pokemon?|\n");
-							printf("\t|Escriba S o N\n");
-							
+							printf("\t|Escriba S o N                        |\n");
+							printf("\t--------------------------------------- \n");
 							scanf("%s", &opcion1);
 			
 							switch(opcion1){
@@ -288,7 +288,8 @@ int main () {
 									regresar++;
 								break;
 								case 'N':
-									printf("\t¿Desea volver al menu?\n");
+									printf("\t--------------------------------------------------------------- \n");
+									printf("\t|¿Desea volver al menu?                                       |\n");
 								break;	
 							}
 							
@@ -319,28 +320,34 @@ int main () {
 								}
 							}while(m == 0);
 						
-							printf("\t¿Desean consultar algun otro pokemon?\n");
-								printf("\tEscriba S o N\n");
-								scanf("%s", &opcion1);
+							printf("\t--------------------------------------- \n");
+							printf("\t|¿Desean consultar algun otro pokemon?|\n");
+							printf("\t|Escriba S o N                        |\n");
+							printf("\t--------------------------------------- \n");
+							scanf("%s", &opcion1);
 								
 								switch(opcion1){
 									case 'S':
 										regresar++;
 									break;
 									case 'N':
-										printf("\t¿Desea volver al menu?\n");
+									printf("\t--------------------------------------------------------------- \n");
+									printf("\t|¿Desea volver al menu?                                       |\n");
 									break;	
 								}
 						break;
 					}
 				}while(regresar == 1);
 					
-				printf("\tPulse S si desea volver al menu principal o N si quiere salir\n");
+				printf("\t|Pulse S si desea volver al menu principal o N si quiere salir|\n");
+				printf("\t--------------------------------------------------------------- \n");
 				scanf("%s", &opcion1);
 					switch(opcion1) {
 						case 'S':
-							printf("\tHas elegido volver al menu\n");
 							system("cls");
+							printf("\tHas elegido volver al menú\n");
+							printf("\t---------------------------\n");
+						    printf("\n");
 							volver++;
 						break;
 						case 'N':
@@ -357,7 +364,7 @@ int main () {
                 printf("\t|Pulse 7 para saber cosas de los gimnasios\n");
                 printf("\t|Pulse 8 para saber cosas de los personajes\n");
                 printf("\t|Pulse 9 para volver al menu o salir del programa\n");
-                printf("\t-------------------------------------\n");
+                printf("\t-------------------------------------------------\n");
                 scanf("%d", &seleccion);
                 system("cls");
         
@@ -437,10 +444,12 @@ int main () {
 									
 						printf("\tPulse 1 si desea volver al menu principal o 2 si quiere salir\n");
 						scanf("%d", &seleccion);
+						system("cls");
 				
 								switch(seleccion) {
 									case 1:
 										printf("\tHas elegido volver al menu\n");
+										printf("\t--------------------------\n");
 										volver++;
 										break;
 									case 2:
@@ -479,8 +488,9 @@ int main () {
 
 				switch(seleccion) {
 					case 1:
-						printf("\tHas elegido volver al menu\n");
 						system("cls");
+						printf("\tHas elegido volver al menu\n");
+						printf("\t--------------------------\n");
 						volver++;
 						break;
 						
