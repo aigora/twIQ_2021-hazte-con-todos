@@ -42,7 +42,7 @@ int main () {
 	setlocale(LC_ALL, "");
 	FILE*fentrada;
 	char buscar, opcion1;
-	struct buscador poke[151] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[153] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
@@ -110,7 +110,7 @@ int main () {
 								{"Machop",66,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
 								{"Machoke",67,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
 								{"Machamp",68,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
-								{"Bellsprout",69,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},
+								{"Bellsprout",69,1,"Nice","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},
 								{"Weepinbell",70,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},								
 								{"Victreebel",71,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},
 								{"Tentacool",72,1,"Agua y Veneno","Psiquico, Tierra  y Eléctrico","Tentacool-Tentacruel"},
@@ -129,8 +129,8 @@ int main () {
 								{"Dodrio",85,1,"Normal y Volador","Eléctrico, Hielo y Roca","Doduo-Dodrio"},								
 								{"Seel",86,1,"Agua","Planta y Eléctrico","Seel-Dewgong"},								
 								{"Dewgong",87,1,"Agua y Hielo","Lucha, Roca, Planta y Eléctrico","Poliwag-Poliwhirl"},
-								{"Grimmer",88,1,"Veneno","Tierra y Psiquico","Grimmer-Muk"},								
-								{"Muk",89,1,"Veneno","Tierra y Psiquico","Grimmer-Muk"},
+								{"Grimmer",88,1,"Veneno","Tierra y Psiquico","Grimmer-Muk-Cum"},								
+								{"Muk",89,1,"Veneno","Tierra y Psiquico","Grimmer-Muk-Cum"},
 								{"Shellder",90,1,"Agua","Planta y Eléctrico","Seel-Dewgong"},								
 								{"Cloyster",91,1,"Agua y Hielo","Lucha, Roca, Planta y Eléctrico","Seel-Dewgong"},
 								{"Gastly",92,1,"Fantasma y Veneno","Fantasma, Psiquico, Siniestro y Tierra","Gastly-Haunter-Gengar"},								
@@ -192,7 +192,9 @@ int main () {
 								{"Dragonair",148,1,"Dragon","Hada, Hielo y Dragon","Dratini-Dragonair-Dragonite"},
 								{"Dragonite",149,1,"Dragon y Volador","Hada, Roca, Hielo y Dragon","Dratini-Dragonair-Dragonite"},
 								{"Mewtwo",150,1,"Psiquico","Fantasma, Siniestro y Bicho","Mewtwo"},
-								{"Mew",151,1,"Psiquico","Fantasma, Siniestro y Bicho","Mew"} };
+								{"Mew",151,1,"Psiquico","Fantasma, Siniestro y Bicho","Mew"},
+								{"Messi",152,1,"Legendario","El Bicho","Messi_chikito-Messi-Messirve"},
+								{"El Bicho",153,1,"Legendario","Messirve y Mebale","El Bicho-Suuuuuu"}};
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m, regresar;
@@ -430,7 +432,7 @@ int main () {
 				printf("\t--------------------------------\n");
 				scanf("%d", &nPokedex);
 				
-				for(i = 0 ; i < 151 ; i++){
+				for(i = 0 ; i < 153 ; i++){
 					if(nPokedex == poke[i].npokedex){
 						
 						printf("\t*Pokemon*\n");
@@ -466,7 +468,7 @@ int main () {
 				scanf("%s", &nombre);
 			do{
 				m = 0;
-				for(i = 0 ; i < 151 ; i++){
+				for(i = 0 ; i < 153 ; i++){
 					if(strcmp(nombre, poke[i].nombre) == 0){ 
 						
 						printf("\t*Pokemon*\n");
