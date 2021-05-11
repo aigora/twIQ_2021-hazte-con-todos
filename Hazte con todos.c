@@ -263,7 +263,7 @@ int main () {
 							printf("\t--------------------------------\n");
 							scanf("%d", &nPokedex);
 							
-							for(i = 0 ; i < 151 ; i++){
+							for(i = 0 ; i < 153 ; i++){
 								if(nPokedex == poke[i].npokedex){
 									
 									printf("\n\t*Pokemon*\n");
@@ -299,7 +299,7 @@ int main () {
 							scanf("%s", &nombre);
 							do{
 								m = 0;
-								for(i = 0 ; i < 151 ; i++){
+								for(i = 0 ; i < 153 ; i++){
 									if(strcmp(nombre, poke[i].nombre) == 0){ 
 										
 										printf("\n\t*Pokemon*\n");
