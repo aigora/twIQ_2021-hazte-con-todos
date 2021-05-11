@@ -42,7 +42,7 @@ int main () {
 	setlocale(LC_ALL, "");
 	FILE*fentrada;
 	char buscar, opcion1;
-	struct buscador poke[62] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[151] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
@@ -103,7 +103,96 @@ int main () {
 								{"Arcanine",59,1,"Fuego","Agua, Tierra y Roca","Growlithe-Arcanine"},
 								{"Poliwag",60,1,"Agua","Planta y Eléctrico","Poliwag-Poliwhirl-Poliwrath"},
 								{"Poliwhirl",61,1,"Agua","Planta y Eléctrico","Poliwag-Poliwhirl-Poliwrath"},
-								{"Poliwrath",62,1,"Agua y Lucha","Planta, Eléctrico, Volador, Hada y Psiquico ","Poliwag-Poliwhirl-Poliwrath"} };
+								{"Poliwrath",62,1,"Agua y Lucha","Planta, Eléctrico, Volador, Hada y Psiquico ","Poliwag-Poliwhirl-Poliwrath"},
+								{"Abra",63,1,"Psiquico","Siniestro, Bicho, Fantasma","Abra-Kadabra-Alakazam"},
+								{"Kadabra",64,1,"Psiquico","Siniestro, Bicho, Fantasma","Abra-Kadabra-Alakazam"},
+								{"Alakazam",65,1,"Psiquico","Siniestro, Bicho, Fantasma","Abra-Kadabra-Alakazam"},
+								{"Machop",66,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
+								{"Machoke",67,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
+								{"Machamp",68,1,"Lucha","Psiquico, Volador y Hada","Machop-Machoke-Machamp"},
+								{"Bellsprout",69,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},
+								{"Weepinbell",70,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},								
+								{"Victreebel",71,1,"Planta y Veneno","Fuego, Volador, Hielo y Psiquico","Bellsprout-Weepinbell-Victreebel"},
+								{"Tentacool",72,1,"Agua y Veneno","Psiquico, Tierra  y Eléctrico","Tentacool-Tentacruel"},
+								{"Tentacruel",73,1,"Agua y Veneno","Psiquico, Tierra  y Eléctrico","Tentacool-Tentacruel"},
+								{"Geodude",74,1,"Roca y Tierra","Acero, Lucha, Agua, Hielo, Planta y Tierra","Geodude-Graveler-Golem"},
+								{"Geodude",75,1,"Roca y Tierra","Acero, Lucha, Agua, Hielo, Planta y Tierra","Geodude-Graveler-Golem"},
+								{"Golem",76,1,"Roca y Tierra","Acero, Lucha, Agua, Hielo, Planta y Tierra","Geodude-Graveler-Golem"},
+								{"Ponyta",77,1,"Fuego","Agua, Tierra y Roca","Ponyta-Ninetales"},
+								{"Rapidash",78,1,"Fuego","Agua, Tierra y Roca","Ponyta-Ninetales"},
+								{"Slowpoke",79,1,"Agua y Psiquico","Planta, Fantasma, Siniestro, Bicho y Eléctrico","Slowpoke-Slowbro"},
+								{"Slowbro",80,1,"Agua y Psiquico","Planta, Fantasma, Siniestro, Bicho y Eléctrico","Slowpoke-Slowbro"},
+								{"Magnemite",81,1,"Eléctrico y Acero ","Tierra, Lucha y Fuego","Magnemite-Magneton"},
+								{"Magneton",82,1,"Eléctrico y Acero","Tierra, Lucha y Fuego","Magnemite-Magneton"},
+								{"Farfetch´d",83,1,"Normal y Volador","Eléctrico, Hielo y Roca","Farfetch´d"},								
+								{"Doduo",84,1,"Normal y Volador","Eléctrico, Hielo y Roca","Doduo-Dodrio"},								
+								{"Dodrio",85,1,"Normal y Volador","Eléctrico, Hielo y Roca","Doduo-Dodrio"},								
+								{"Seel",86,1,"Agua","Planta y Eléctrico","Seel-Dewgong"},								
+								{"Dewgong",87,1,"Agua y Hielo","Lucha, Roca, Planta y Eléctrico","Poliwag-Poliwhirl"},
+								{"Grimmer",88,1,"Veneno","Tierra y Psiquico","Grimmer-Muk"},								
+								{"Muk",89,1,"Veneno","Tierra y Psiquico","Grimmer-Muk"},
+								{"Shellder",90,1,"Agua","Planta y Eléctrico","Seel-Dewgong"},								
+								{"Cloyster",91,1,"Agua y Hielo","Lucha, Roca, Planta y Eléctrico","Seel-Dewgong"},
+								{"Gastly",92,1,"Fantasma y Veneno","Fantasma, Psiquico, Siniestro y Tierra","Gastly-Haunter-Gengar"},								
+								{"Haunter",93,1,"Fantasma y Veneno","Fantasma, Psiquico, Siniestro y Tierra","Gastly-Haunter-Gengar"},								
+								{"Gengar",94,1,"Fantasma y Veneno","Fantasma, Psiquico, Siniestro y Tierra","Gastly-Haunter-Gengar"},
+								{"Onix",95,1,"Roca y Tierra","Acero, Lucha, Agua, Hielo, Planta y Tierra","Onix"},
+								{"Drowzee",96,1,"Psiquico","Siniestro, Bicho, Fantasma","Drowzee-Hypno"},								
+								{"Hypno",97,1,"Psiquico","Siniestro, Bicho, Fantasma","Drowzee-Hypno"},
+								{"Krabby",98,1,"Agua","Planta y Eléctrico","Krabby-Kingler"},								
+								{"Kingler",99,1,"Agua","Planta y Eléctrico","Krabby-Kingler"},
+								{"Voltorb",100,1,"Eléctrico","Tierra","Voltorb-Electrode"},								
+								{"Electrode",101,1,"Eléctrico","Tierra","Voltorb-Electrode"},
+								{"Exeggcute",102,1,"Planta y Psiquico","Fuego, Fantasma, Volador, Hielo, Siniestro, Veneno y Bicho","Exeggcute-Exeggutor"},								
+								{"Exeggutor",103,1,"Planta y Psiquico","Fuego, Fantasma, Volador, Hielo, Siniestro, Veneno y Bicho","Exeggcute-Exeggutor"},
+								{"Cubone",104,1,"Tierra","Agua, Planta y Hielo","Cubone-Marowak"},								
+								{"Marowak",105,1,"Tierra","Agua, Planta y Hielo","Cubone-Marowak"},								
+								{"Hitmonlee",106,1,"Lucha","Psiquico, Volador y Hada", "Hitmonlee"},
+								{"Hitmonchan",107,1,"Lucha","Psiquico, Volador y Hada", "Hitmonchan"},
+								{"Lickitung",108,1,"Normal","Lucha","Lickitung"},								
+								{"Koffing",109,1,"Veneno","Psiquico y Tierra","Koffing-Weezing"},
+								{"Weezing",110,1,"Veneno","Psiquico y Tierra","Koffing-Weezing"},								
+								{"Rhyhorn",111,1,"Tierra y Roca","Acero, Lucha, Tierra, Agua, Planta y Hielo","Rhyhorn-Rhydon"},
+								{"Rhydon",112,1,"Tierra y Roca","Acero, Lucha, Tierra, Agua, Planta y Hielo","Rhyhorn-Rhydon"},								
+								{"Chansey",113,1,"Normal","Lucha","Chansey"},								
+								{"Tangela",114,1,"Planta y Psiquico","Fuego, Volador, Hielo, Veneno y Bicho","Tangela"},							
+								{"Kangaskhan",115,1,"Normal","Lucha","Kangaskhan"},								
+								{"Horsea",116,1,"Agua","Planta y Eléctrico","Horsea-Seadra"},
+								{"Seadra",117,1,"Agua","Planta y Eléctrico","Horsea-Seadra"},								
+								{"Goldeen",118,1,"Agua","Planta y Eléctrico","Goldeen-Seaking"},
+								{"Seaking",119,1,"Agua","Planta y Eléctrico","Goldeen-Seaking"},								
+								{"Staryu",120,1,"Agua","Planta y Eléctrico","Staryu-Starmie"},
+								{"Starmie",121,1,"Agua","Planta y Eléctrico","Staryu-Starmie"},								
+								{"Mr. Mime",122,1,"Psiquico y Hada","Fantasma, Acero y Veneo","Mr. Mime"},								
+								{"Scyther",123,1,"Bicho y Volador","Fuego, Volador, Eléctrico, Hielo, Roca","Scyther"},								
+								{"Jynx",124,1,"Hielo y Psiquico","Acero, Fantasma, Fuego, Siniestro, Roca y Bicho","Jynx"},								
+								{"Electabuzz",125,1,"Eléctrico","Tierra","Electabuzz"},								
+								{"Magmar",126,1,"Fuego","Agua, Tierra y Roca","Magmar"},								
+								{"Pinsir",127,1,"Bicho","Fuego, Volador y Roca","Pinsir"},								
+								{"Tauros",128,1,"Normal","Lucha","Tauros"},								
+								{"Magikarp",129,1,"Agua","Planta y Eléctrico","Magikarp-Gyarados"},
+								{"Gyarados",130,1,"Agua y Volador","Roca y Eléctrico","Magikarp-Gyarados"},								
+								{"Lapras",131,1,"Agua y Hielo","Planta, Lucha, Roca y Eléctrico","Lapras"},								
+								{"Ditto",132,1,"Normal","Lucha","Ditto"},								
+								{"Eevee",133,1,"Normal","Lucha","Eevee-Marowak"},
+								{"Vaporeon",134,1,"Agua","Planta y Elétrico","Eevee-Vaporeon"},
+								{"Jolteon",135,1,"Eléctrico","Tierra","Eevee-Jolteon"},
+								{"Flareon",136,1,"Fuego","Agua, Tierra y Roca","Eevee-Flareon"},								
+								{"Porygon",137,1,"Normal","Lucha","Porygon"},								
+								{"Omanyte",138,1,"Agua y Roca","Planta, Lucha, Tierra y Eléctrico","Omanyte"},
+								{"Omastar",139,1,"Agua y Roca","Planta, Lucha, Tierra y Eléctrico","Omastar"},
+								{"Kabuto",140,1,"Agua y Roca","Planta, Lucha, Tierra y Eléctrico","Kabuto-Kabutops"},
+								{"Kabutops",141,1,"Agua y Roca","Planta, Lucha, Tierra y Eléctrico","Kabuto-Kabutops"},							
+								{"Aerodactyl",142,1,"Volador y Roca","Acero, Agua, Eléctrico, Hielo y Roca","Aerodactyl"},																
+								{"Snorlax",143,1,"Normal","Lucha","Snorlax"},								
+								{"Articuno",144,1,"Hielo y Volador","Acero, Fuego, Eléctrico y Roca","Articuno"},								
+								{"Zapdos",145,1,"Eléctrico y Volador","Hielo y Roca","Zapdos"},								
+								{"Moltres",146,1,"Fuego y Volador","Agua, Eléctrico y Roca","Moltres"},								
+								{"Dratini",147,1,"Dragon","Hada, Hielo y Dragon","Dratini-Dragonair-Dragonite"},
+								{"Dragonair",148,1,"Dragon","Hada, Hielo y Dragon","Dratini-Dragonair-Dragonite"},
+								{"Dragonite",149,1,"Dragon y Volador","Hada, Roca, Hielo y Dragon","Dratini-Dragonair-Dragonite"},
+								{"Mewtwo",150,1,"Psiquico","Fantasma, Siniestro y Bicho","Mewtwo"},
+								{"Mew",151,1,"Psiquico","Fantasma, Siniestro y Bicho","Mew"} };
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m, regresar;
@@ -341,7 +430,7 @@ int main () {
 				printf("\t--------------------------------\n");
 				scanf("%d", &nPokedex);
 				
-				for(i = 0 ; i < 62 ; i++){
+				for(i = 0 ; i < 151 ; i++){
 					if(nPokedex == poke[i].npokedex){
 						
 						printf("\t*Pokemon*\n");
@@ -377,7 +466,7 @@ int main () {
 				scanf("%s", &nombre);
 			do{
 				m = 0;
-				for(i = 0 ; i < 62 ; i++){
+				for(i = 0 ; i < 151 ; i++){
 					if(strcmp(nombre, poke[i].nombre) == 0){ 
 						
 						printf("\t*Pokemon*\n");
