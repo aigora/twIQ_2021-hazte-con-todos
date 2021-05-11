@@ -326,8 +326,8 @@ int main () {
 					}
 				}
 				printf("\t¿Desean consultar algun otro pokemon?\n");
-				printf("\tEscriba S o N");
-				scanf("%c", &opcion1);
+				printf("\tEscriba S o N\n");
+				scanf("%s", &opcion1);
 				
 				switch(opcion1){
 					case 'S':
@@ -366,7 +366,7 @@ int main () {
 			}while(m == 0);
 			
 			printf("\t¿Desean consultar algun otro pokemon?\n");
-				printf("\tEscriba S o N");
+				printf("\tEscriba S o N\n");
 				scanf("%s", opcion1);
 				
 				switch(opcion1){
