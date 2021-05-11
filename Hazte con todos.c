@@ -281,8 +281,10 @@ int main () {
 				switch(seleccion) {
 					case 1:
 						printf("\tHas elegido volver al menu\n");
+						system("cls");
 						volver++;
 						break;
+						
 					case 2:
 						printf("\t!!!Hasta la proxima!!");
 						return 0;
@@ -326,7 +328,7 @@ int main () {
 					}
 				}
 				printf("\t¿Desean consultar algun otro pokemon?\n");
-				printf("\tEscriba S o N");
+				printf("\tEscriba S o N.\n");
 				scanf("%c", &opcion1);
 				
 				switch(opcion1){
