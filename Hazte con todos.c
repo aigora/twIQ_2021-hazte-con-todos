@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <wchar.h>
+#include <locale.h>
 #define N 10000
 
 
@@ -37,6 +39,7 @@ struct buscador{
 	char evoluciones[100];
 	};
 int main () {
+	setlocale(LC_ALL, "");
 	FILE*fentrada;
 	char buscar, opcion1;
 	struct buscador poke[62] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
