@@ -136,6 +136,8 @@ int main () {
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
+		printf("\t|Pulse 5 para info del programa sobre como usarlo\n");
+		
 		printf("\t-------------------------------------\n");
 		scanf("%d", &seleccion);
 		system("cls");
@@ -157,16 +159,16 @@ int main () {
 				volver = 0;
 				system("color AF");
 		
-                printf("\t|Pulse 5 para saber cosas sobre objetos \n");
-                printf("\t|Pulse 6 para saber cosas de los gimnasios\n");
-                printf("\t|Pulse 7 para saber cosas de los personajes\n");
-                printf("\t|Pulse 8 para volver al menu o salir del programa\n");
+                printf("\t|Pulse 6 para saber cosas sobre objetos \n");
+                printf("\t|Pulse 7 para saber cosas de los gimnasios\n");
+                printf("\t|Pulse 8 para saber cosas de los personajes\n");
+                printf("\t|Pulse 9 para volver al menu o salir del programa\n");
                 printf("\t-------------------------------------\n");
                 scanf("%d", &seleccion);
                 system("cls");
         
                 switch(seleccion) {
-                	case 5:
+                	case 6:
 						volver = 0;
 						system("color 46");
 
@@ -188,7 +190,7 @@ int main () {
 						fclose(fentrada);
 						return 0;
                 	
-              		case 6:
+              		case 7:
 						volver = 0;
 						system("color 0B");
 						
@@ -211,7 +213,7 @@ int main () {
 						fclose(fentrada);
 						return 0;        
 
-		           case 7:
+		           case 8:
 						volver = 0;
 						system("color 04");
 						
@@ -235,7 +237,7 @@ int main () {
 						fclose(fentrada);
 					return 0;
 	
-					case 8:
+					case 9:
 						volver = 0;
 						system("color FC");
 									
@@ -293,6 +295,29 @@ int main () {
 						return 0;
 				}
 				break;
+				 case 5:
+						volver = 0;
+						system("color 04");
+						
+						int t = 0, g;
+						char texto2[N];
+					
+						
+						fentrada = fopen("info.txt","r");
+						
+						if(fentrada == NULL ){
+							printf("No hay fichero\n");
+							return 0;
+						}
+	
+						while(fscanf(fentrada,"%c",&texto2[t] ) != EOF){
+							t++;
+						}
+						for (g = 0; g < t; g++){
+							printf("%c",texto2[g]);
+						}
+						fclose(fentrada);
+					return 0;
 		}	
 	} while(volver == 1);
 	
