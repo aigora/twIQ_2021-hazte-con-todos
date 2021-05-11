@@ -277,8 +277,10 @@ int main () {
 									printf("\t---------------------------------------\n");
 								}
 							}
-							printf("\t¿Desean consultar algun otro pokemon?\n");
-							printf("\tEscriba S o N\n");
+							printf("\t--------------------------------------- \n");
+							printf("\t|¿Desean consultar algun otro pokemon?|\n");
+							printf("\t|Escriba S o N\n");
+							
 							scanf("%s", &opcion1);
 			
 							switch(opcion1){
