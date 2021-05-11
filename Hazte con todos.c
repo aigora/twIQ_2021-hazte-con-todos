@@ -226,7 +226,6 @@ int main () {
 		printf("\t|Pulse 3 para salir\n");
 		printf("\t|Pulse 4 para saber cosas de los creadores\n");
 		printf("\t|Pulse 5 para info del programa sobre como usarlo\n");
-		
 		printf("\t-------------------------------------\n");
 		scanf("%d", &seleccion);
 		system("cls");
@@ -241,8 +240,110 @@ int main () {
 				scanf("%s", entrenador);
 				printf("\t|Bienvenido al menu %s, aqui podras buscar informacion sobre el pokemon que quieras\n",entrenador);
 				printf("\t------------------------------------------------------------------------------------\n");
-
-				break;
+				
+				do{
+					printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
+					printf("\t-------------------------------------------------------------------------------------------\n");
+					scanf("%s", &buscar);
+					system("cls");
+					
+					if(buscar == ('N'))
+						p = 1;
+					else if(buscar == 'M')
+						p = 2;
+					
+					switch(p){
+						case 1:
+							
+							regresar = 0;
+							
+							printf("\tIntroduce el numero del pokemon:\n");
+							printf("\t--------------------------------\n");
+							scanf("%d", &nPokedex);
+							
+							for(i = 0 ; i < 151 ; i++){
+								if(nPokedex == poke[i].npokedex){
+									
+									printf("\n\t*Pokemon*\n");
+									printf("\t-----------\n");
+									printf("\t|%s|\n",poke[i].nombre);
+									printf("\tGeneracion: %d\n",poke[i].generacion);
+									printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+									printf("\tTipo: %s\n",poke[i].tipo);
+									printf("\tDebilidad: %s\n",poke[i].debilidad);
+									printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+									printf("\t---------------------------------------\n");
+								}
+							}
+							printf("\t¿Desean consultar algun otro pokemon?\n");
+							printf("\tEscriba S o N\n");
+							scanf("%s", &opcion1);
+			
+							switch(opcion1){
+								case 'S':
+									regresar++;
+								break;
+								case 'N':
+									printf("\t¿Desea volver al menu?\n");
+								break;	
+							}
+							
+						break;
+						
+						case 2:
+							regresar = 0;	
+							printf("\tIntroduce el nombre del pokemon:\n");
+							printf("\t--------------------------------\n");
+							scanf("%s", &nombre);
+							do{
+								m = 0;
+								for(i = 0 ; i < 151 ; i++){
+									if(strcmp(nombre, poke[i].nombre) == 0){ 
+										
+										printf("\n\t*Pokemon*\n");
+										printf("\t-----------\n");
+										printf("\t|%s|\n",poke[i].nombre);
+										printf("\tGeneracion: %d\n",poke[i].generacion);
+										printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+										printf("\tTipo: %s\n",poke[i].tipo);
+										printf("\tDebilidad: %s\n",poke[i].debilidad);
+										printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+										printf("\t---------------------------------------\n");
+										
+										m++;	
+									}	
+								}
+							}while(m == 0);
+						
+							printf("\t¿Desean consultar algun otro pokemon?\n");
+								printf("\tEscriba S o N\n");
+								scanf("%s", &opcion1);
+								
+								switch(opcion1){
+									case 'S':
+										regresar++;
+									break;
+									case 'N':
+										printf("\t¿Desea volver al menu?\n");
+									break;	
+								}
+						break;
+					}
+				}while(regresar == 1);
+					
+				printf("\tPulse S si desea volver al menu principal o N si quiere salir\n");
+				scanf("%s", &opcion1);
+					switch(opcion1) {
+						case 'S':
+							printf("\tHas elegido volver al menu\n");
+							system("cls");
+							volver++;
+						break;
+						case 'N':
+							printf("\t!!!Hasta la proxima!!");
+						return 0;
+					}
+			break;
 
 			case 2:	
 				volver = 0;
@@ -410,96 +511,7 @@ int main () {
 		}	
 	} while(volver == 1);
 	
-	do{
-		printf("\t|Escriba N para buscar al pokemon por su numero de pokedex o M para buscarlo por su nombre\n");
-		printf("\t-------------------------------------------------------------------------------------------\n");
-		scanf("%s", &buscar);
-		system("cls");
-		
-		if(buscar == ('N'))
-			p = 1;
-		else if(buscar == 'M')
-			p = 2;
-		
-		switch(p){
-			case 1:
-				
-				regresar = 0;
-				
-				printf("\tIntroduce el numero del pokemon:\n");
-				printf("\t--------------------------------\n");
-				scanf("%d", &nPokedex);
-				
-				for(i = 0 ; i < 151 ; i++){
-					if(nPokedex == poke[i].npokedex){
-						
-						printf("\t*Pokemon*\n");
-						printf("\t-----------\n");
-						printf("\t|%s|\n",poke[i].nombre);
-						printf("\tGeneracion: %d\n",poke[i].generacion);
-						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-						printf("\tTipo: %s\n",poke[i].tipo);
-						printf("\tDebilidad: %s\n",poke[i].debilidad);
-						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-						printf("\t---------------------------------------\n");
-					}
-				}
-				printf("\t¿Desean consultar algun otro pokemon?\n");
-				printf("\tEscriba S o N\n");
-				scanf("%s", &opcion1);
-
-				switch(opcion1){
-					case 'S':
-						regresar++;
-					break;
-					case 'N':
-						printf("\tHasta la proximaaa!!!!!\n");
-					return 0;	
-				}
-				
-				break;
-			
-			case 2:
-				regresar = 0;	
-				printf("\tIntroduce el nombre del pokemon:\n");
-				printf("\t--------------------------------\n");
-				scanf("%s", &nombre);
-			do{
-				m = 0;
-				for(i = 0 ; i < 151 ; i++){
-					if(strcmp(nombre, poke[i].nombre) == 0){ 
-						
-						printf("\t*Pokemon*\n");
-						printf("\t-----------\n");
-						printf("\t|%s|\n",poke[i].nombre);
-						printf("\tGeneracion: %d\n",poke[i].generacion);
-						printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-						printf("\tTipo: %s\n",poke[i].tipo);
-						printf("\tDebilidad: %s\n",poke[i].debilidad);
-						printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-						printf("\t---------------------------------------\n");
-						
-						m++;	
-					}	
-				}
-			}while(m == 0);
-			
-			printf("\t¿Desean consultar algun otro pokemon?\n");
-				printf("\tEscriba S o N\n");
-				scanf("%s", &opcion1);
-				
-				switch(opcion1){
-					case 'S':
-						regresar++;
-					break;
-					case 'N':
-						printf("\tHasta la proximaaa!!!!!\n");
-					return 0;	
-				}
-			
-			break;	
-		}
-	}while(regresar == 1);
+	
 
 	return 0;
 }
