@@ -1,0 +1,55 @@
+El primer gimnasio del juego se encuentra en ciudad Plateada.
+En este el líder es Brock quien usa pokemons de tipo Roca: Geodude y Onix.
+Al vencerle te hace entrega de la medalla Roca.
+
+En ciudad Celeste nos encontramos con el segundo gimnasio, liderado por Misty. 
+Especializada en pokemons de tipo agua: Staryu y su evolución Starmie.
+Tras su derrota te entrega de la medalla Cascada.
+
+El tercer gimnasio está en ciudad Carmín donde Lt. Surge es el líder.
+Emplea pokemons de tipo eléctrico: Voltorb, Pikachu y Raichu.
+Al vencerle te hace entrega de la medalla Trueno.
+
+En ciudad Azulona nos encontramos con el cuarto gimnasio.
+En este, la líder Erika usa pokemons de tipo Planta: Victreebel, Tangela, Villeplume.
+Tras su derrota te entrega de la medalla Arcoiris.
+
+El quinto gimnasio está en ciudad Fucksia donde el Koga es el líder.
+Emplea pokemons de tipo veneno: dos Koffings, Muk y Weezing .
+Al vencerle te hace entrega de la medalla Alma.
+
+En ciudad Azafrán nos encontramos con el sexto gimnasio, liderado por Sabrina. 
+Especializada en pokemons de tipo psíquico: Kadabra, Mr Mime y ALakazam 
+(aunque tambien usa a Venomoth).
+Tras su derrota te entrega de la medalla Pantano.
+
+El séptimo gimnasio está en la isla Canela donde Blaine es el líder.
+Emplea pokemons de tipo fuego: Growlithe, Ponyta, Rapidash y Arcanine.
+Al vencerle te hace entrega de la medalla Volcán.
+
+El octavo y útimo gimnasio se encuentra en ciudad Verde.
+Está liderado por Giovanni quien usa pokemons de tierra: Onyx, Rhyhorn y Kangaskhan .
+Al vencerle te hace entrega de la medalla Tierra.
+
+Tras superar el recorrido de gimnasios, el próximo objetivo es la liga Pokemon.
+
+El primer oponente del alto mando es Lorelei, entrenadora especializada en pokemons
+de tipo hielo: Dewgong, Cloyster, Slowbro, Jynx y Lapras.
+
+El siguiente es el entrenador Bruno quien emplea pokemons de tipo lucha a
+excepcion de dos Onix : Hitmonchan, Hitmonlee y Machamp.
+
+La tercera oponente del alto mando es Agatha quien usa pokemons de tipo fantasma y
+veneno: Haunter, Golbat, Arbok y dos Gengar.
+
+El último alto mando es el antiguo campeón pokemon Lance quien lucha con pokemons 
+de tipo Dragon a excepcion de Gyarados y Aerodactyl: dos Dragonairy Dragonite.
+
+Ahora el actual campeón a batir es Azul, el rival desde el inicio del juego
+cuyo equipo pokemon consta de: Pidgeot, Rhydon, Alakazam, 
+Exeggutor, Arcanine y Blastoise.
+
+
+
+
+ 
