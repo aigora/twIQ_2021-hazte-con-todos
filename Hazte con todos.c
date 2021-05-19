@@ -2,7 +2,9 @@
 #include <string.h>
 #include <wchar.h>
 #include <locale.h>
+#include <conio.h>
 #define N 10000
+
 
 
 void imprimirPokeball(){
@@ -209,9 +211,11 @@ int main () {
 
 
 	
-	printf("\n\tIntroduce cualquier tecla\n\n");
-    scanf("%s");
-    system("cls");
+	printf("\n\tPulsa enter\n\n");
+    
+	getch();
+    
+	system("cls");
 	
 
 	printf("\t---------------------------------\n");
