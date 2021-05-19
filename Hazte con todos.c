@@ -5,6 +5,37 @@
 #define N 10000
 
 
+struct buscador{
+	char nombre[30];
+	int npokedex;
+	int generacion;
+	char tipo[100];
+	char debilidad[100];
+	char evoluciones[100];
+};
+
+void vuelta(){
+	int regresar = 0; 
+	char opcion1;
+	
+	printf("\t--------------------------------------- \n");
+	printf("\t|¿Desean consultar algun otro pokemon?|\n");
+	printf("\t|Escriba S o N                        |\n");
+	printf("\t--------------------------------------- \n");
+	scanf("%s", &opcion1);
+
+	switch(opcion1){
+		case 'S':
+			regresar++;
+		break;
+		case 'N':
+			printf("\t--------------------------------------------------------------- \n");
+			printf("\t|¿Desea volver al menu?                                       |\n");
+		break;	
+	}
+	
+}
+
 void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
     printf("                      @@@@@@@@#############@@@@@@@@                \n");         
@@ -30,19 +61,11 @@ void imprimirPokeball(){
     printf("                            @@@@@@@@@@@@@@@@@                      \n");    
 }
 
-struct buscador{
-	char nombre[30];
-	int npokedex;
-	int generacion;
-	char tipo[100];
-	char debilidad[100];
-	char evoluciones[100];
-	};
 int main () {
 	setlocale(LC_ALL, "");
 	FILE*fentrada;
 	char buscar, opcion1;
-	struct buscador poke[153] = { {"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
+	struct buscador poke[153] = {{"Bulbasaur",1,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Ivysaur",2,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Venusaur",3,1,"Planta-Veneno","Fuego, Psiquico, Volador y Hielo","Bulbasaur-Ivysaur-Venusaur"},
 								{"Charmander",4,1,"Fuego","Agua, Tierra y Roca","Charmander-Charmeleon-Charizard"},
@@ -198,15 +221,12 @@ int main () {
 	int seleccion, volver, i, M, p;
 	char entrenador[N], nombre[100];
 	int nPokedex, m, regresar;
-	
-	
+		
 	
 	system("color 06");
 	printf("\t-----------------\n");
 	printf("\t|HAZTE CON TODOS|\n");
 	printf("\t-----------------\n");
-
-
 
 	
 	printf("\n\tIntroduce cualquier tecla\n\n");
@@ -222,7 +242,6 @@ int main () {
 
 	do {
 		 
-
 		printf("\t|Pulse 1 para entrar al menu de la Pokedex \n");
 		printf("\t|Pulse 2 para saber informacion sobre objetos, gimnasios o personajes\n");
 		printf("\t|Pulse 3 para salir\n");
@@ -277,21 +296,9 @@ int main () {
 									printf("\t---------------------------------------\n");
 								}
 							}
-							printf("\t--------------------------------------- \n");
-							printf("\t|¿Desean consultar algun otro pokemon?|\n");
-							printf("\t|Escriba S o N                        |\n");
-							printf("\t--------------------------------------- \n");
-							scanf("%s", &opcion1);
-			
-							switch(opcion1){
-								case 'S':
-									regresar++;
-								break;
-								case 'N':
-									printf("\t--------------------------------------------------------------- \n");
-									printf("\t|¿Desea volver al menu?                                       |\n");
-								break;	
-							}
+							
+							vuelta();
+							
 							
 						break;
 						
@@ -301,7 +308,6 @@ int main () {
 							printf("\t--------------------------------\n");
 							scanf("%s", &nombre);
 							do{
-								m = 0;
 								for(i = 0 ; i < 153 ; i++){
 									if(strcmp(nombre, poke[i].nombre) == 0){ 
 										
@@ -315,45 +321,33 @@ int main () {
 										printf("\tEvoluciones: %s\n",poke[i].evoluciones);
 										printf("\t---------------------------------------\n");
 										
-										m++;	
-									}	
+										m++;
+									}
 								}
+								
 							}while(m == 0);
 						
-							printf("\t--------------------------------------- \n");
-							printf("\t|¿Desean consultar algun otro pokemon?|\n");
-							printf("\t|Escriba S o N                        |\n");
-							printf("\t--------------------------------------- \n");
-							scanf("%s", &opcion1);
-								
-								switch(opcion1){
-									case 'S':
-										regresar++;
-									break;
-									case 'N':
-									printf("\t--------------------------------------------------------------- \n");
-									printf("\t|¿Desea volver al menu?                                       |\n");
-									break;	
-								}
+							vuelta();
+						
 						break;
 					}
 				}while(regresar == 1);
 					
-				printf("\t|Pulse S si desea volver al menu principal o N si quiere salir|\n");
+				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
 				printf("\t--------------------------------------------------------------- \n");
-				scanf("%s", &opcion1);
-					switch(opcion1) {
-						case 'S':
-							system("cls");
-							printf("\tHas elegido volver al menú\n");
-							printf("\t---------------------------\n");
-						    printf("\n");
-							volver++;
-						break;
-						case 'N':
-							printf("\t!!!Hasta la proxima!!");
-						return 0;
-					}
+				scanf("%d", &seleccion);
+				switch(seleccion) {
+					case 1:
+						system("cls");
+						printf("\tHas elegido volver al menú\n");
+						printf("\t---------------------------\n");
+					    printf("\n");
+						volver = 1;
+					break;
+					case 2:
+						printf("\t!!!Hasta la proxima!!");
+				}
+				
 			break;
 
 			case 2:	
@@ -442,20 +436,21 @@ int main () {
 						volver = 0;
 						system("color FC");
 									
-						printf("\tPulse 1 si desea volver al menu principal o 2 si quiere salir\n");
-						scanf("%d", &seleccion);
-						system("cls");
-				
-								switch(seleccion) {
-									case 1:
-										printf("\tHas elegido volver al menu\n");
-										printf("\t--------------------------\n");
-										volver++;
-										break;
-									case 2:
-										printf("\t!!!Hasta la proxima!!!");
-										return 0;
-								}
+					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+					printf("\t--------------------------------------------------------------- \n");
+					scanf("%d", &seleccion);
+					switch(seleccion) {
+						case 1:
+							system("cls");
+							printf("\tHas elegido volver al menú\n");
+							printf("\t---------------------------\n");
+						    printf("\n");
+							volver = 1;
+						break;
+						case 2:
+							printf("\t!!!Hasta la proxima!!");
+					}
+						
 					break;
 				}
 			break;	
@@ -482,22 +477,23 @@ int main () {
 				printf("\t-------*Adrian Langarica Esteban*-------\n");
 				printf("\t------*Ruben Ernesto Godoy Salcedo*-----\n");
 				printf("\t========================================\n");
-				printf("\tPulse 1 si desea volver a la pantalla de inicio o 2 si quiere salir\n");
-				scanf("%d", &seleccion);
 				
 
+				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+				printf("\t--------------------------------------------------------------- \n");
+				scanf("%d", &seleccion);
 				switch(seleccion) {
 					case 1:
 						system("cls");
-						printf("\tHas elegido volver al menu\n");
-						printf("\t--------------------------\n");
-						volver++;
-						break;
-						
+						printf("\tHas elegido volver al menú\n");
+						printf("\t---------------------------\n");
+					    printf("\n");
+						volver = 1;
+					break;
 					case 2:
 						printf("\t!!!Hasta la proxima!!");
-						return 0;
 				}
+				
 				break;
 				 case 5:
 						volver = 0;
