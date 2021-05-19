@@ -2,7 +2,9 @@
 #include <string.h>
 #include <wchar.h>
 #include <locale.h>
+#include <conio.h>
 #define N 10000
+
 
 
 struct buscador{
@@ -35,6 +37,7 @@ void vuelta(){
 	}
 	
 }
+
 
 void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
@@ -229,9 +232,11 @@ int main () {
 	printf("\t-----------------\n");
 
 	
-	printf("\n\tIntroduce cualquier tecla\n\n");
-    scanf("%s");
-    system("cls");
+	printf("\n\tPulsa enter\n\n");
+    
+	getch();
+    
+	system("cls");
 	
 
 	printf("\t---------------------------------\n");
