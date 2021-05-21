@@ -321,15 +321,21 @@ int main () {
 						printf("\t--------------------------------------- \n");
 						scanf("%s", &opcion1);
 						
-							switch(opcion1){
-								case 'S':
-									regresar++;
-								break;
-								case 'N':
-									printf("\t----------------------------------------------------------------\n");
-									printf("\t|                    ¿Desea volver al menu?                    |\n");
-								break;	
-							}
+						if(opcion1 == ('S' || 's')){
+							p = 1;
+						}else if(opcion1 == ('N' || 'n')){
+							p = 2;
+						}
+						
+						switch(p){
+							case 1:
+								regresar++;
+							break;
+							case 2:
+								printf("\t----------------------------------------------------------------\n");
+								printf("\t|                    ¿Desea volver al menu?                    |\n");
+							break;	
+						}
 					
 				}while(regresar == 1);
 					
