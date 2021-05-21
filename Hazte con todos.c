@@ -14,26 +14,26 @@ struct buscador{
 	char evoluciones[100];
 };
 
-int vuelta(){
-	int regresar = 0; 
-	char opcion1;
-	
-	printf("\t--------------------------------------- \n");
-	printf("\t|¿Desean consultar algun otro pokemon?|\n");
-	printf("\t|Escriba S o N                        |\n");
-	printf("\t--------------------------------------- \n");
-	scanf("%s", &opcion1);
-
-	switch(opcion1){
-		case 'S':
-			regresar++;
-		break;
-		case 'N':
-			printf("\t----------------------------------------------------------------\n");
-			printf("\t|                    ¿Desea volver al menu?                    |\n");
-		break;	
+void google(char nombre[], struct buscador poke[]){
+	int i, m = 0; 
+	do{
+	for(i = 0 ; i < 153 ; i++){
+		if(strcmp(nombre, poke[i].nombre) == 0){ 
+			
+			printf("\n\t*Pokemon*\n");
+			printf("\t-----------\n");
+			printf("\t|%s|\n",poke[i].nombre);
+			printf("\tGeneracion: %d\n",poke[i].generacion);
+			printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+			printf("\tTipo: %s\n",poke[i].tipo);
+			printf("\tDebilidad: %s\n",poke[i].debilidad);
+			printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+			printf("\t---------------------------------------\n");
+			
+			m++;
+		}
 	}
-	return regresar++;
+	}while(m == 0);
 }
 
 
@@ -307,34 +307,34 @@ int main () {
 							printf("\tIntroduce el nombre del pokemon:\n");
 							printf("\t--------------------------------\n");
 							scanf("%s", &nombre);
-							do{
-								for(i = 0 ; i < 153 ; i++){
-									if(strcmp(nombre, poke[i].nombre) == 0){ 
-										
-										printf("\n\t*Pokemon*\n");
-										printf("\t-----------\n");
-										printf("\t|%s|\n",poke[i].nombre);
-										printf("\tGeneracion: %d\n",poke[i].generacion);
-										printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-										printf("\tTipo: %s\n",poke[i].tipo);
-										printf("\tDebilidad: %s\n",poke[i].debilidad);
-										printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-										printf("\t---------------------------------------\n");
-										
-										m++;
-									}
-								}
+							
+							google(nombre, poke);
 								
-							}while(m == 0);
 							
 						break;
 						
-					}vuelta();
+					}
+						regresar = 0;
+						printf("\t--------------------------------------- \n");
+						printf("\t|¿Desean consultar algun otro pokemon?|\n");
+						printf("\t|Escriba S o N                        |\n");
+						printf("\t--------------------------------------- \n");
+						scanf("%s", &opcion1);
+						
+							switch(opcion1){
+								case 'S':
+									regresar++;
+								break;
+								case 'N':
+									printf("\t----------------------------------------------------------------\n");
+									printf("\t|                    ¿Desea volver al menu?                    |\n");
+								break;	
+							}
 					
 				}while(regresar == 1);
 					
 				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-				printf("\t--------------------------------------------------------------- \n");
+				printf("\t---------------------------------------------------------------\n");
 				scanf("%d", &seleccion);
 				switch(seleccion) {
 					case 1:
@@ -342,7 +342,7 @@ int main () {
 						printf("\tHas elegido volver al menú\n");
 						printf("\t---------------------------\n");
 					    printf("\n");
-						volver = 1;
+						volver++;
 					break;
 					case 2:
 						printf("\t!!!Hasta la proxima!!");
@@ -386,27 +386,40 @@ int main () {
 						return 0;
                 	
               		case 7:
-						volver = 0;
-						system("color 0B");
+              			
+              			printf("\tPulse 1 para leer sobre los gimnasios de la primera generacio o 2 para los de la segunda\n");
+              			scanf("%d", &seleccion);
+              			
+              			switch(seleccion){
+              				case 1:
+              					volver = 0;
+								system("color 0B");
+								
+								int q = 0, a;
+								char texto1[N];
+								
+								fentrada = fopen("gimnasios.txt","r");
+								
+								if(fentrada == NULL ){
+									printf("No hay fichero\n");
+									return 0;
+								}
+								
+								while(fscanf(fentrada,"%c",&texto1[y] ) != EOF){
+									y++;
+								}
+								for (a = 0; a < q; w++){
+									printf("%c",texto1[a]);
+								}
+								fclose(fentrada);
+              				break;
+              				
+              				case 2:
+              					
+              				break;
+						  }
 						
-						int q = 0, a;
-						char texto1[N];
-						
-						fentrada = fopen("gimnasios.txt","r");
-						
-						if(fentrada == NULL ){
-							printf("No hay fichero\n");
-							return 0;
-						}
-						
-						while(fscanf(fentrada,"%c",&texto1[y] ) != EOF){
-							y++;
-						}
-						for (a = 0; a < q; w++){
-							printf("%c",texto1[a]);
-						}
-						fclose(fentrada);
-						return 0;        
+					return 0;        
 
 		           case 8:
 						volver = 0;
