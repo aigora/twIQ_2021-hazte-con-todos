@@ -36,6 +36,25 @@ void google(char nombre[], struct buscador poke[]){
 	}while(m == 0);
 }
 
+int vuelta(int seleccion){
+ 	int volver;
+ 	
+	volver = 0;
+	switch(seleccion) {
+		case 1:
+			volver++;
+			system("cls");
+			printf("\tHas elegido volver al menú\n");
+			printf("\t---------------------------\n");
+		    printf("\n");
+			
+		break;
+		case 2:
+			printf("\t!!!Hasta la proxima!!");
+	}
+	return volver;
+}
+
 
 void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
@@ -301,7 +320,6 @@ int main () {
 							}
 										
 						break;
-						
 						case 2:
 							regresar = 0;	
 							printf("\tIntroduce el nombre del pokemon:\n");
@@ -321,41 +339,27 @@ int main () {
 						printf("\t--------------------------------------- \n");
 						scanf("%s", &opcion1);
 						
-						if(opcion1 == ('S' || 's')){
-							p = 1;
-						}else if(opcion1 == ('N' || 'n')){
-							p = 2;
-						}
 						
-						switch(p){
-							case 1:
+						regresar = 0;
+						switch(opcion1){
+							case 'S':
 								regresar++;
 							break;
-							case 2:
+							case 'N':
 								printf("\t----------------------------------------------------------------\n");
 								printf("\t|                    ¿Desea volver al menu?                    |\n");
+							
 							break;	
 						}
 					
 				}while(regresar == 1);
-					
+				
 				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
 				printf("\t---------------------------------------------------------------\n");
-				scanf("%d", &seleccion);
-				switch(seleccion) {
-					case 1:
-						system("cls");
-						printf("\tHas elegido volver al menú\n");
-						printf("\t---------------------------\n");
-					    printf("\n");
-						volver++;
-					break;
-					case 2:
-						printf("\t!!!Hasta la proxima!!");
-				}
+				scanf("%d", &seleccion);	
+				volver = vuelta(seleccion);
 				
 			break;
-
 			case 2:	
 				volver = 0;
 				system("color AF");
@@ -389,8 +393,11 @@ int main () {
 							printf("%c", texto[w]);
 						}
 						fclose(fentrada);
-						return 0;
-                	
+						printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+						printf("\t---------------------------------------------------------------\n");
+						scanf("%d", &seleccion);
+						volver = vuelta(seleccion);
+                	break;
               		case 7:
               			
               			printf("\tPulse 1 para leer sobre los gimnasios de la primera generacio o 2 para los de la segunda\n");
@@ -418,59 +425,56 @@ int main () {
 									printf("%c",texto1[a]);
 								}
 								fclose(fentrada);
+								printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+								printf("\t---------------------------------------------------------------\n");
+								scanf("%d", &seleccion);
+								volver = vuelta(seleccion);
               				break;
               				
               				case 2:
-              					
+              					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+								printf("\t---------------------------------------------------------------\n");
+								scanf("%d", &seleccion);
+              					volver = vuelta(seleccion);
               				break;
 						  }
-						
-					return 0;        
-
-		           case 8:
-						volver = 0;
-						system("color 04");
-						
-						int t = 0, g;
-						char texto2[N];
+				break;
+		        case 8:
+					volver = 0;
+					system("color 04");
 					
-						
-						fentrada = fopen("personajes.txt","r");
-						
-						if(fentrada == NULL ){
-							printf("No hay fichero\n");
-							return 0;
-						}
-	
-						while(fscanf(fentrada,"%c",&texto2[t] ) != EOF){
-							t++;
-						}
-						for (g = 0; g < t; g++){
-							printf("%c",texto2[g]);
-						}
-						fclose(fentrada);
-					return 0;
-	
-					case 9:
-						volver = 0;
-						system("color FC");
-									
-					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-					printf("\t--------------------------------------------------------------- \n");
-					scanf("%d", &seleccion);
-					switch(seleccion) {
-						case 1:
-							system("cls");
-							printf("\tHas elegido volver al menú\n");
-							printf("\t---------------------------\n");
-						    printf("\n");
-							volver = 1;
-						break;
-						case 2:
-							printf("\t!!!Hasta la proxima!!");
+					int t = 0, g;
+					char texto2[N];
+				
+					
+					fentrada = fopen("personajes.txt","r");
+					
+					if(fentrada == NULL ){
+						printf("No hay fichero\n");
+						return 0;
 					}
-						
-					break;
+	
+					while(fscanf(fentrada,"%c",&texto2[t] ) != EOF){
+						t++;
+					}
+					for (g = 0; g < t; g++){
+						printf("%c",texto2[g]);
+					}
+					fclose(fentrada);
+					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+					printf("\t---------------------------------------------------------------\n");
+					scanf("%d", &seleccion);
+					volver = vuelta(seleccion);
+				break;
+	
+				case 9:
+					volver = 0;
+					system("color FC");
+					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+					printf("\t---------------------------------------------------------------\n");
+					scanf("%d", &seleccion);
+					volver = vuelta(seleccion);
+				break;
 				}
 			break;	
 			case 3:
@@ -497,46 +501,38 @@ int main () {
 				printf("\t------*Ruben Ernesto Godoy Salcedo*-----\n");
 				printf("\t========================================\n");
 				
-
 				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-				printf("\t--------------------------------------------------------------- \n");
+				printf("\t---------------------------------------------------------------\n");
 				scanf("%d", &seleccion);
-				switch(seleccion) {
-					case 1:
-						system("cls");
-						printf("\tHas elegido volver al menú\n");
-						printf("\t---------------------------\n");
-					    printf("\n");
-						volver = 1;
-					break;
-					case 2:
-						printf("\t!!!Hasta la proxima!!");
-				}
+				volver = vuelta(seleccion);
+			break;
+			case 5:
+				volver = 0;
+				system("color 04");
 				
-				break;
-				 case 5:
-						volver = 0;
-						system("color 04");
-						
-						int t = 0, g;
-						char texto2[N];
-					
-						
-						fentrada = fopen("info.txt","r");
-						
-						if(fentrada == NULL ){
-							printf("No hay fichero\n");
-							return 0;
-						}
-	
-						while(fscanf(fentrada,"%c",&texto2[t] ) != EOF){
-							t++;
-						}
-						for (g = 0; g < t; g++){
-							printf("%c",texto2[g]);
-						}
-						fclose(fentrada);
+				int t = 0, g;
+				char texto2[N];
+			
+				
+				fentrada = fopen("info.txt","r");
+				
+				if(fentrada == NULL ){
+					printf("No hay fichero\n");
 					return 0;
+				}
+
+				while(fscanf(fentrada,"%c",&texto2[t] ) != EOF){
+					t++;
+				}
+				for (g = 0; g < t; g++){
+					printf("%c",texto2[g]);
+				}
+				fclose(fentrada);
+				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+				printf("\t---------------------------------------------------------------\n");
+				scanf("%d", &seleccion);
+				volver = vuelta(seleccion);
+			break;
 		}	
 	} while(volver == 1);
 	
