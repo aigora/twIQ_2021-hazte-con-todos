@@ -1,0 +1,50 @@
+El primer gimnasio del juego se encuentra en ciudad Malva.
+En este el líder es Pegaso quien usa pokemons de tipo Volador: Geodude y Onix.
+Al vencerle te hace entrega de la medalla Céfiro.
+
+En Pueblo Azalea nos encontramos con el segundo gimnasio, liderado por Antón. 
+Especializada en pokemons de tipo Bicho: Staryu y su evolución Starmie.
+Tras su derrota te entrega de la medalla Colmena.
+
+El tercer gimnasio está en ciudad Trigal donde Blanca es el líder.
+Emplea pokemons de tipo Normal: Voltorb, Pikachu y Raichu.
+Al vencerle te hace entrega de la medalla Planicie.
+
+En ciudad Iris nos encontramos con el cuarto gimnasio.
+En este, la líder Morti usa pokemons de tipo Fantasma: Victreebel, Tangela, Villeplume.
+Tras su derrota te entrega de la medalla Niebla.
+
+El quinto gimnasio está en ciudad Orquídea donde el Anibal es el líder.
+Emplea pokemons de tipo Lucha: dos Koffings, Muk y Weezing .
+Al vencerle te hace entrega de la medalla Tormenta.
+
+En ciudad Olivo nos encontramos con el sexto gimnasio, liderado por Yasmina.
+Especializada en pokemons de tipo Acero: Kadabra, Mr Mime y ALakazam 
+(aunque tambien usa a Venomoth).
+Tras su derrota te hace entrega de la medalla MIneral.
+
+El séptimo gimnasio está en la Pueblo Caoba donde Fredo es el líder.
+Emplea pokemons de tipo Hielo: Growlithe, Ponyta, Rapidash y Arcanine.
+Al vencerle te hace entrega de la medalla Glaciar.
+
+El octavo y útimo gimnasio se encuentra en ciudad Endrino.
+Está liderado por Débora quien usa pokemons de Dragón: Onyx, Rhyhorn y Kangaskhan .
+Al vencerle te hace entrega de la medalla Dragón.
+
+Tras superar el recorrido de gimnasios, el próximo objetivo es la liga Pokemon.
+
+El primer oponente del alto mando es Mento, entrenadora especializada en pokemons
+de tipo Psiquico: Dewgong, Cloyster, Slowbro, Jynx y Lapras.
+
+El siguiente es el entrenador Koga quien emplea pokemons de tipo veneno a
+excepcion de dos Onix : Hitmonchan, Hitmonlee y Machamp.
+
+La tercera oponente del alto mando es Bruno quien usa pokemons de tipo 
+lucha: Haunter, Golbat, Arbok y dos Gengar.
+
+El último alto mando es el antiguo campeón pokemon Lance quien lucha con pokemons 
+de tipo Dragon a excepcion de Gyarados y Aerodactyl: dos Dragonairy Dragonite.
+
+Ahora el actual campeón a batir es Rojo, el rival desde el inicio del juego
+cuyo equipo pokemon consta de: Pidgeot, Rhydon, Alakazam, 
+Exeggutor, Arcanine y Blastoise.
