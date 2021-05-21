@@ -31,8 +31,8 @@ void vuelta(){
 			regresar++;
 		break;
 		case 'N':
-			printf("\t--------------------------------------------------------------- \n");
-			printf("\t|¿Desea volver al menu?                                       |\n");
+			printf("\t----------------------------------------------------------------\n");
+			printf("\t|                    ¿Desea volver al menu?                    |\n");
 		break;	
 	}
 	
@@ -301,10 +301,7 @@ int main () {
 									printf("\t---------------------------------------\n");
 								}
 							}
-							
-							vuelta();
-							
-							
+										
 						break;
 						
 						case 2:
@@ -332,10 +329,9 @@ int main () {
 								
 							}while(m == 0);
 						
-							vuelta();
 						
-						break;
-					}
+					}vuelta();
+					
 				}while(regresar == 1);
 					
 				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
