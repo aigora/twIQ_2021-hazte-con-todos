@@ -5,8 +5,6 @@
 #include <conio.h>
 #define N 10000
 
-
-
 struct buscador{
 	char nombre[30];
 	int npokedex;
@@ -16,7 +14,7 @@ struct buscador{
 	char evoluciones[100];
 };
 
-void vuelta(){
+int vuelta(){
 	int regresar = 0; 
 	char opcion1;
 	
@@ -35,7 +33,7 @@ void vuelta(){
 			printf("\t|                    ¿Desea volver al menu?                    |\n");
 		break;	
 	}
-	
+	return regresar++;
 }
 
 
@@ -273,9 +271,9 @@ int main () {
 					scanf("%s", &buscar);
 					system("cls");
 					
-					if(buscar == ('N'))
+					if((buscar == 'N') || (buscar == 'n'))
 						p = 1;
-					else if(buscar == 'M')
+					else if((buscar == 'M') || (buscar == 'm'))
 						p = 2;
 					
 					switch(p){
@@ -328,7 +326,8 @@ int main () {
 								}
 								
 							}while(m == 0);
-						
+							
+						break;
 						
 					}vuelta();
 					
