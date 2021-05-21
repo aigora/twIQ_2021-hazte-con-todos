@@ -399,12 +399,15 @@ int main () {
 						volver = vuelta(seleccion);
                 	break;
               		case 7:
-              			
-              			printf("\tPulse 1 para leer sobre los gimnasios de la primera generacio o 2 para los de la segunda\n");
+              			printf("\t-----------------------------------------------------------------\n");
+              			printf("\t|Pulse 1 para leer sobre los gimnasios de la primera generacion |  \n");
+              			printf("\t|Pulse 2 para leer sobre los gimnasios de la segunda generacion |  \n");
+              			printf("\t-----------------------------------------------------------------\n");
               			scanf("%d", &seleccion);
               			
               			switch(seleccion){
               				case 1:
+              					system("cls");
               					volver = 0;
 								system("color 0B");
 								
@@ -436,6 +439,28 @@ int main () {
 								printf("\t---------------------------------------------------------------\n");
 								scanf("%d", &seleccion);
               					volver = vuelta(seleccion);
+              					system("cls");
+              						volver = 0;
+								system("color 0B");
+								
+								int t = 0, u;
+								char texto2[N];
+								
+								fentrada = fopen("gimnasios2.txt","r");
+								
+								if(fentrada == NULL ){
+									printf("No hay fichero\n");
+									return 0;
+								}
+								
+								while(fscanf(fentrada,"%c",&texto1[y] ) != EOF){
+									y++;
+								}
+								for (u = 0; u < t; w++){
+									printf("%c",texto1[a]);
+								}
+								fclose(fentrada);
+								
               				break;
 						  }
 				break;
