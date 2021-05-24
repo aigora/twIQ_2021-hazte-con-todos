@@ -17,7 +17,7 @@ struct buscador{
 void google(char nombre[], struct buscador poke[]){
 	int i, m = 0; 
 	do{
-	for(i = 0 ; i < 153 ; i++){
+	for(i = 0 ; i < 253 ; i++){
 		if(strcmp(nombre, poke[i].nombre) == 0){ 
 			
 			printf("\n\t*Pokemon*\n");
@@ -407,7 +407,7 @@ int main () {
 							printf("\t--------------------------------\n");
 							scanf("%d", &nPokedex);
 							
-							for(i = 0 ; i < 153 ; i++){
+							for(i = 0 ; i < 253 ; i++){
 								if(nPokedex == poke[i].npokedex){
 									
 									printf("\n\t*Pokemon*\n");
