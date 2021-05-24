@@ -346,7 +346,7 @@ int main () {
 	int nPokedex, m, regresar;
 		
 	
-	system("color 06");
+	system("color 56");
 	printf("\t-----------------\n");
 	printf("\t|HAZTE CON TODOS|\n");
 	printf("\t-----------------\n");
@@ -362,7 +362,7 @@ int main () {
 	printf("\t---------------------------------\n");
 	printf("\t|*Bienvenido a'HAZTE CON TODOS'*|\n");
 	printf("\t---------------------------------\n");
-	 system("color 04");
+	 system("color 75");
 	
 
 	do {
@@ -470,7 +470,7 @@ int main () {
 			break;
 			case 2:	
 				volver = 0;
-				system("color AF");
+				system("color 75");
 		
                 printf("\t|Pulse 6 para saber cosas sobre objetos \n");
                 printf("\t|Pulse 7 para saber cosas de los gimnasios\n");
@@ -483,7 +483,7 @@ int main () {
                 switch(seleccion) {
                 	case 6:
 						volver = 0;
-						system("color 46");
+						system("color 75");
 
 						int y = 0, w;
 						char texto[N];
@@ -517,7 +517,7 @@ int main () {
               				case 1:
               					system("cls");
               					volver = 0;
-								system("color 0B");
+								system("color 75");
 								
 								int q = 0, a;
 								char texto1[N];
@@ -545,7 +545,7 @@ int main () {
               				case 2:
               					system("cls");
               						volver = 0;
-								system("color 0B");
+								system("color 75");
 								
 								int t = 0, u;
 								char texto2[N];
@@ -573,7 +573,7 @@ int main () {
 				break;
 		        case 8:
 					volver = 0;
-					system("color 04");
+					system("color 75");
 					
 					int t = 0, g;
 					char texto2[N];
@@ -601,7 +601,7 @@ int main () {
 	
 				case 9:
 					volver = 0;
-					system("color FC");
+					system("color 75");
 					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
 					printf("\t---------------------------------------------------------------\n");
 					scanf("%d", &seleccion);
@@ -640,7 +640,7 @@ int main () {
 			break;
 			case 5:
 				volver = 0;
-				system("color 04");
+				system("color 75");
 				
 				int t = 0, g;
 				char texto2[N];
