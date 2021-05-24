@@ -443,13 +443,13 @@ int main () {
 						scanf("%s", &opcion1);
 						
 						
-						if((buscar == 'S') || (buscar == 's'))
+						if((opcion1 == 'S') || (opcion1 == 's'))
 							p = 1;
-						else if((buscar == 'N') || (buscar == 'n'))
+						else if((opcion1 == 'N') || (opcion1 == 'n'))
 							p = 2;
 						
 						regresar = 0;
-						switch(buscar){
+						switch(p){
 							case 1:
 								regresar++;
 							break;
