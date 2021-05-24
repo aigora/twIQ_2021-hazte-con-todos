@@ -340,12 +340,17 @@ int main () {
 						scanf("%s", &opcion1);
 						
 						
+						if((buscar == 'S') || (buscar == 's'))
+							p = 1;
+						else if((buscar == 'N') || (buscar == 'n'))
+							p = 2;
+						
 						regresar = 0;
-						switch(opcion1){
-							case 'S':
+						switch(buscar){
+							case 1:
 								regresar++;
 							break;
-							case 'N':
+							case 2:
 								printf("\t----------------------------------------------------------------\n");
 								printf("\t|                    ¿Desea volver al menu?                    |\n");
 							
@@ -435,10 +440,6 @@ int main () {
               				break;
               				
               				case 2:
-              					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-								printf("\t---------------------------------------------------------------\n");
-								scanf("%d", &seleccion);
-              					volver = vuelta(seleccion);
               					system("cls");
               						volver = 0;
 								system("color 0B");
@@ -460,7 +461,10 @@ int main () {
 									printf("%c",texto1[a]);
 								}
 								fclose(fentrada);
-								
+								printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+								printf("\t---------------------------------------------------------------\n");
+								scanf("%d", &seleccion);
+              					volver = vuelta(seleccion);
               				break;
 						  }
 				break;
