@@ -36,26 +36,6 @@ void google(char nombre[], struct buscador poke[]){
 	}while(m == 0);
 }
 
-int vuelta(int seleccion){
- 	int volver;
- 	
-	volver = 0;
-	switch(seleccion) {
-		case 1:
-			volver++;
-			system("cls");
-			printf("\tHas elegido volver al menú\n");
-			printf("\t---------------------------\n");
-		    printf("\n");
-			
-		break;
-		case 2:
-			printf("\t!!!Hasta la proxima!!");
-	}
-	return volver;
-}
-
-
 void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
     printf("                      @@@@@@@@#############@@@@@@@@                \n");         
@@ -80,6 +60,29 @@ void imprimirPokeball(){
     printf("                      @@@@@@@@,           *@@@@@@@&                \n");         
     printf("                            @@@@@@@@@@@@@@@@@                      \n");    
 }
+
+int vuelta(int seleccion){
+ 	int volver;
+ 	
+	volver = 0;
+	switch(seleccion) {
+		case 1:
+			volver++;
+			system("cls");
+			printf("\tHas elegido volver al menú\n");
+			printf("\t---------------------------\n");
+		    printf("\n");
+			
+		break;
+		case 2:
+			printf("\t!!!Hasta la proxima!!");
+			
+	}
+	return volver;
+}
+
+
+
 
 int main () {
 	setlocale(LC_ALL, "");
