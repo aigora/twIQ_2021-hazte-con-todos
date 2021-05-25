@@ -39,12 +39,12 @@ void imprimirPokeball(){
     printf("                            @@@@@@@@@@@@@@@@@                      \n");    
 }
 
-void google(char nombre[], struct buscador poke[]){
-	 int i; 
-	 
-	 for(i = 0 ; i < 253 ; i++){
+int google(char nombre[], struct buscador poke[]){
+	int i, m; 
+	m = 1;
+	for(i = 0 ; i < 253 ; i++){
 		if(strcmp(nombre, poke[i].nombre) == 0){ 
-			
+			m = 0; 
 			printf("\n\t*Pokemon*\n");
 			printf("\t-----------\n");
 			printf("\t|%s|\n",poke[i].nombre);
@@ -53,22 +53,10 @@ void google(char nombre[], struct buscador poke[]){
 			printf("\tTipo: %s\n",poke[i].tipo);
 			printf("\tDebilidad: %s\n",poke[i].debilidad);
 			printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-			printf("\t---------------------------------------\n");
-			
-		}else{
-			if(nombre[0] == poke[i].nombre[0]){
-				printf("\n\t*Pokemon*\n");
-				printf("\t-----------\n");
-				printf("\t|%s|\n",poke[i].nombre);
-				printf("\tGeneracion: %d\n",poke[i].generacion);
-				printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-				printf("\tTipo: %s\n",poke[i].tipo);
-				printf("\tDebilidad: %s\n",poke[i].debilidad);
-				printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-				printf("\t---------------------------------------\n");
-			}
+			printf("\t---------------------------------------\n");		
 		}
 	}
+	return m;
 }
 
 int vuelta(int seleccion){
@@ -430,14 +418,16 @@ int main (){
 						break;
 						case 'M':
 						case 'm':
-		
-							regresar = 0;	
-							printf("\tIntroduce el nombre del pokemon:\n");
-							printf("\t--------------------------------\n");
-							scanf("%s", &nombre);
-				
-							google(nombre, poke);
-
+							do{	
+								regresar = 0;	
+								printf("\tIntroduce el nombre del pokemon:\n");
+								printf("\t--------------------------------\n");
+								scanf("%s", &nombre);
+							
+								m = (google(nombre, poke));
+							
+							}while(m == 1);
+						
 						break;
 						
 					}
