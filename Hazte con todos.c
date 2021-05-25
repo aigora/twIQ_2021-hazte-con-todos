@@ -514,7 +514,7 @@ int main (){
 								int q = 0, a;
 								char texto1[N];
 								
-								fentrada = fopen("gimnasios.txt","r");
+								fentrada = fopen("txt/gimnasios.txt","r");
 								
 								if(fentrada == NULL ){
 									printf("No hay fichero\n");
@@ -542,7 +542,7 @@ int main (){
 								int t = 0, u;
 								char texto2[N];
 								
-								fentrada = fopen("gimnasios2.txt","r");
+								fentrada = fopen("txt/gimnasios2.txt","r");
 								
 								if(fentrada == NULL ){
 									printf("No hay fichero\n");
@@ -571,7 +571,7 @@ int main (){
 					char texto2[N];
 				
 					
-					fentrada = fopen("personajes.txt","r");
+					fentrada = fopen("txt/personajes.txt","r");
 					
 					if(fentrada == NULL ){
 						printf("No hay fichero\n");
@@ -629,6 +629,7 @@ int main (){
 				printf("\t---------------------------------------------------------------\n");
 				scanf("%d", &seleccion);
 				volver = vuelta(seleccion);
+				system("color 75");
 			break;
 			case 5:
 				volver = 0;
@@ -638,7 +639,7 @@ int main (){
 				char texto2[N];
 			
 				
-				fentrada = fopen("info.txt","r");
+				fentrada = fopen("txt/info.txt","r");
 				
 				if(fentrada == NULL ){
 					printf("No hay fichero\n");
@@ -652,6 +653,8 @@ int main (){
 					printf("%c",texto2[g]);
 				}
 				fclose(fentrada);
+				printf("\n");
+				printf("\t---------------------------------------------------------------\n");
 				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
 				printf("\t---------------------------------------------------------------\n");
 				scanf("%d", &seleccion);
