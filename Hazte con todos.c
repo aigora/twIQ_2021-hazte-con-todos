@@ -531,7 +531,7 @@ int main (){
               				
               				case 2:
               					system("cls");
-              						volver = 0;
+              					volver = 0;
 								system("color 75");
 								
 								int t = 0, u;
