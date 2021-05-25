@@ -14,28 +14,6 @@ struct buscador{
 	char evoluciones[100];
 };
 
-void google(char nombre[], struct buscador poke[]){
-	int i, m = 0; 
-	do{
-	for(i = 0 ; i < 253 ; i++){
-		if(strcmp(nombre, poke[i].nombre) == 0){ 
-			
-			printf("\n\t*Pokemon*\n");
-			printf("\t-----------\n");
-			printf("\t|%s|\n",poke[i].nombre);
-			printf("\tGeneracion: %d\n",poke[i].generacion);
-			printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
-			printf("\tTipo: %s\n",poke[i].tipo);
-			printf("\tDebilidad: %s\n",poke[i].debilidad);
-			printf("\tEvoluciones: %s\n",poke[i].evoluciones);
-			printf("\t---------------------------------------\n");
-			
-			m++;
-		}
-	}
-	}while(m == 0);
-}
-
 void imprimirPokeball(){
  	printf("                            @@@@@@@@@@@@@@@@@                      \n");          
     printf("                      @@@@@@@@#############@@@@@@@@                \n");         
@@ -61,6 +39,38 @@ void imprimirPokeball(){
     printf("                            @@@@@@@@@@@@@@@@@                      \n");    
 }
 
+void google(char nombre[], struct buscador poke[]){
+	 int i; 
+	 
+	 for(i = 0 ; i < 253 ; i++){
+		if(strcmp(nombre, poke[i].nombre) == 0){ 
+			
+			printf("\n\t*Pokemon*\n");
+			printf("\t-----------\n");
+			printf("\t|%s|\n",poke[i].nombre);
+			printf("\tGeneracion: %d\n",poke[i].generacion);
+			printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+			printf("\tTipo: %s\n",poke[i].tipo);
+			printf("\tDebilidad: %s\n",poke[i].debilidad);
+			printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+			printf("\t---------------------------------------\n");
+			
+		}else{
+			if(nombre[0] == poke[i].nombre[0]){
+				printf("\n\t*Pokemon*\n");
+				printf("\t-----------\n");
+				printf("\t|%s|\n",poke[i].nombre);
+				printf("\tGeneracion: %d\n",poke[i].generacion);
+				printf("\tNumero de Pokedex: %d\n", poke[i].npokedex);
+				printf("\tTipo: %s\n",poke[i].tipo);
+				printf("\tDebilidad: %s\n",poke[i].debilidad);
+				printf("\tEvoluciones: %s\n",poke[i].evoluciones);
+				printf("\t---------------------------------------\n");
+			}
+		}
+	}
+}
+
 int vuelta(int seleccion){
  	int volver;
  	
@@ -82,9 +92,7 @@ int vuelta(int seleccion){
 }
 
 
-
-
-int main () {
+int main (){
 	setlocale(LC_ALL, "");
 	FILE*fentrada;
 	char buscar, opcion1;
@@ -393,13 +401,10 @@ int main () {
 					scanf("%s", &buscar);
 					system("cls");
 					
-					if((buscar == 'N') || (buscar == 'n'))
-						p = 1;
-					else if((buscar == 'M') || (buscar == 'm'))
-						p = 2;
 					
-					switch(p){
-						case 1:
+					switch(buscar){
+						case 'N':
+						case 'n':
 							
 							regresar = 0;
 							
@@ -423,15 +428,16 @@ int main () {
 							}
 										
 						break;
-						case 2:
+						case 'M':
+						case 'm':
+		
 							regresar = 0;	
 							printf("\tIntroduce el nombre del pokemon:\n");
 							printf("\t--------------------------------\n");
 							scanf("%s", &nombre);
-							
+				
 							google(nombre, poke);
-								
-							
+
 						break;
 						
 					}
@@ -442,18 +448,14 @@ int main () {
 						printf("\t--------------------------------------- \n");
 						scanf("%s", &opcion1);
 						
-						
-						if((opcion1 == 'S') || (opcion1 == 's'))
-							p = 1;
-						else if((opcion1 == 'N') || (opcion1 == 'n'))
-							p = 2;
-						
 						regresar = 0;
-						switch(p){
-							case 1:
+						switch(opcion1){
+							case 'S':
+							case 's':
 								regresar++;
 							break;
-							case 2:
+							case 'N':
+							case 'n':
 								printf("\t----------------------------------------------------------------\n");
 								printf("\t|                    ¿Desea volver al menu?                    |\n");
 							
