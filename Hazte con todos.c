@@ -488,7 +488,7 @@ int main () {
 						int y = 0, w;
 						char texto[N];
 						
-						fentrada = fopen("objetos.txt","r");	
+						fentrada = fopen("txt/objetos.txt","r");	
 						if(fentrada == NULL ){
 							printf("No hay fichero\n");
 							return 0;
