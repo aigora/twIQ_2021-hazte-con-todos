@@ -59,9 +59,13 @@ int google(char nombre[], struct buscador poke[]){
 	return m;
 }
 
-int vuelta(int seleccion){
- 	int volver;
+int vuelta(){
+ 	int volver,seleccion;
  	
+ 	printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
+	printf("\t---------------------------------------------------------------\n");
+	scanf("%d", &seleccion);
+	
 	volver = 0;
 	switch(seleccion) {
 		case 1:
@@ -454,10 +458,7 @@ int main (){
 					
 				}while(regresar == 1);
 				
-				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-				printf("\t---------------------------------------------------------------\n");
-				scanf("%d", &seleccion);	
-				volver = vuelta(seleccion);
+				volver = vuelta();
 				
 			break;
 			case 2:	
@@ -493,10 +494,7 @@ int main (){
 							printf("%c", texto[w]);
 						}
 						fclose(fentrada);
-						printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-						printf("\t---------------------------------------------------------------\n");
-						scanf("%d", &seleccion);
-						volver = vuelta(seleccion);
+						volver = vuelta();
                 	break;
               		case 7:
               			printf("\t-----------------------------------------------------------------\n");
@@ -528,15 +526,12 @@ int main (){
 									printf("%c",texto1[a]);
 								}
 								fclose(fentrada);
-								printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-								printf("\t---------------------------------------------------------------\n");
-								scanf("%d", &seleccion);
-								volver = vuelta(seleccion);
+								volver = vuelta();
               				break;
               				
               				case 2:
               					system("cls");
-              						volver = 0;
+              					volver = 0;
 								system("color 75");
 								
 								int t = 0, u;
@@ -556,10 +551,7 @@ int main (){
 									printf("%c",texto1[a]);
 								}
 								fclose(fentrada);
-								printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-								printf("\t---------------------------------------------------------------\n");
-								scanf("%d", &seleccion);
-              					volver = vuelta(seleccion);
+              					volver = vuelta();
               				break;
 						  }
 				break;
@@ -585,19 +577,13 @@ int main (){
 						printf("%c",texto2[g]);
 					}
 					fclose(fentrada);
-					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-					printf("\t---------------------------------------------------------------\n");
-					scanf("%d", &seleccion);
-					volver = vuelta(seleccion);
+					volver = vuelta();
 				break;
 	
 				case 9:
 					volver = 0;
 					system("color 75");
-					printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-					printf("\t---------------------------------------------------------------\n");
-					scanf("%d", &seleccion);
-					volver = vuelta(seleccion);
+					volver = vuelta();
 				break;
 				}
 			break;	
@@ -627,10 +613,7 @@ int main (){
 				printf("\t------*Ruben Ernesto Godoy Salcedo*-----\n");
 				printf("\t========================================\n");
 				
-				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-				printf("\t---------------------------------------------------------------\n");
-				scanf("%d", &seleccion);
-				volver = vuelta(seleccion);
+				volver = vuelta();
 				system("color 75");
 			break;
 			case 5:
@@ -657,10 +640,7 @@ int main (){
 				fclose(fentrada);
 				printf("\n");
 				printf("\t---------------------------------------------------------------\n");
-				printf("\t|Pulse 1 si desea volver al menu principal o 2 si quiere salir|\n");
-				printf("\t---------------------------------------------------------------\n");
-				scanf("%d", &seleccion);
-				volver = vuelta(seleccion);
+				volver = vuelta();
 			break;
 		}	
 	} while(volver == 1);
