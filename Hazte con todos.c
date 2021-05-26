@@ -603,6 +603,8 @@ int main (){
 			break;	
 			case 3:
 				printf("\t!!!Hasta la proxima!!!");
+				printf("\n");
+				imprimirPokeball();
 				return 0;
 
 			case 4:
