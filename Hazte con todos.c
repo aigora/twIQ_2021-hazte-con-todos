@@ -509,7 +509,6 @@ int main (){
               					volver = 0;
 								system("color 75");
 								
-								int q = 0, a;
 								char texto1[N];
 								
 								fentrada = fopen("txt/gimnasios.txt","r");
@@ -522,8 +521,8 @@ int main (){
 								while(fscanf(fentrada,"%c",&texto1[y] ) != EOF){
 									y++;
 								}
-								for (a = 0; a < q; w++){
-									printf("%c",texto1[a]);
+								for (w = 0; w < y; w++){
+									printf("%c",texto1[w]);
 								}
 								fclose(fentrada);
 								volver = vuelta();
@@ -534,7 +533,6 @@ int main (){
               					volver = 0;
 								system("color 75");
 								
-								int t = 0, u;
 								char texto2[N];
 								
 								fentrada = fopen("txt/gimnasios2.txt","r");
@@ -547,8 +545,8 @@ int main (){
 								while(fscanf(fentrada,"%c",&texto1[y] ) != EOF){
 									y++;
 								}
-								for (u = 0; u < t; w++){
-									printf("%c",texto1[a]);
+								for (w = 0; w < y; w++){
+									printf("%c",texto1[w]);
 								}
 								fclose(fentrada);
               					volver = vuelta();
