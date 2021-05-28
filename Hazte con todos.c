@@ -93,7 +93,7 @@ int main (){
 							printf("\t--------------------------------\n");
 							scanf("%d", &nPokedex);
 							
-							for(i = 0 ; i < 300 ; i++){
+							for(i = 0 ; i < 282 ; i++){
 								if(nPokedex == poke[i].npokedex){
 									
 									printf("\n\t*Pokemon*\n");
