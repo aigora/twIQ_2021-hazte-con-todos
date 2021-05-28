@@ -93,7 +93,7 @@ int main (){
 							printf("\t--------------------------------\n");
 							scanf("%d", &nPokedex);
 							
-							for(i = 0 ; i < 253 ; i++){
+							for(i = 0 ; i < 300 ; i++){
 								if(nPokedex == poke[i].npokedex){
 									
 									printf("\n\t*Pokemon*\n");
@@ -380,7 +380,7 @@ void imprimirPokeball(){
 int google(char nombre[], struct buscador poke[]){
 	int i, m; 
 	m = 1;
-	for(i = 0 ; i < 253 ; i++){
+	for(i = 0 ; i < 300 ; i++){
 		if(strcmp(nombre, poke[i].nombre) == 0){ 
 			m = 0; 
 			printf("\n\t*Pokemon*\n");
