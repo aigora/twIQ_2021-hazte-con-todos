@@ -1,5 +1,5 @@
 Bulbasaur	1	1	Planta-Veneno	Fuego,Psiquico,Volador,Hielo	Bulbasaur-Ivysaur-Venusaur
-Ivysaur	2	1	Planta-Veneno	Fuego, Psiquico, Volador,Hielo	Bulbasaur-Ivysaur-Venusaur
+Ivysaur	 2	1	Planta-Veneno	Fuego, Psiquico, Volador,Hielo	Bulbasaur-Ivysaur-Venusaur
 Venusaur	3	1	Planta-Veneno	Fuego,Psiquico,Volador,Hielo	Bulbasaur-Ivysaur-Venusaur
 Charmander	4	1	Fuego	Agua,Tierra,Roca	Charmander-Charmeleon-Charizard
 Charmeleon	5	1	Fuego	Agua,Tierra,Roca	Charmander-Charmeleon-Charizard
@@ -13,8 +13,8 @@ Butterfree	12	1	Bicho	Fuego,Volador,Roca	Caterpie-Metapod-Butterfree
 Weedle	13	1	Bicho-Veneno	Fuego,Psiquico,Volador,Roca	Weedle-Kakuna-Beedrill
 Kakuna	14	1	Bicho-Veneno	Fuego,Psiquico,Volador,Roca	Weedle-Kakuna-Beedrill
 Beedrill	15	1	Bicho-Veneno	Fuego,Volador,Roca	Weedle-Kakuna-Beedrill
-Pidgey	16	1	Normal-Volador	Eléctrico,Hielo,Roca	Pidgey-Pidgeotto-Pidgeot
-Pidgeotto	17	1	Normal-Volador	Eléctrico,Hielo,Roca	Pidgey-Pidgeotto-Pidgeot
+Pidgey	16	1	Normal-Volador	Electrico,Hielo,Roca	Pidgey-Pidgeotto-Pidgeot
+Pidgeotto	17	1	Normal-Volador	Electrico,Hielo,Roca	Pidgey-Pidgeotto-Pidgeot
 Pidgeot	18	1	Normal-Volador	Eléctrico,Hielo,Roca	Pidgey-Pidgeotto-Pidgeot
 Rattata	19	1	Normal	Lucha	Rattata-Raticate
 Raticate	20	1	Normal	Lucha	Rattata-Raticate
